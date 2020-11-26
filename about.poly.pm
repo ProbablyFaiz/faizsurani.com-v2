@@ -1,7 +1,7 @@
 #lang pollen
 
-◊(define-meta title            "Colophon")
-◊(define-meta doc-publish-date "2016-01-04")
+◊(define-meta title            "About Me")
+◊(define-meta doc-publish-date "2020-11-26")
 
 These pages are my experiment in ◊hyperlink["posts/web-books.html"]{marrying web documents with printed books}: generating high quality print-ready PDF files from the same markup used to create the web pages.
 

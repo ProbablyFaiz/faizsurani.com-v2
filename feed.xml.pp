@@ -25,10 +25,10 @@
 |#
 
 (define opt-feed-ptree   "index.ptree")
-(define opt-author-name  "Joel Dueck")         ; The name given for the feed's <author>
-(define opt-author-email "joel@jdueck.net")    ; Email for the feed's <author>
-(define opt-feed-title   "Secretary of Foreign Relations")
-(define opt-feed-site    "https://thelocalyarn.com/excursus/secretary/") ; This should end with /
+(define opt-author-name  "Faiz Surani")         ; The name given for the feed's <author>
+(define opt-author-email "faiz.surani@gmail.com")    ; Email for the feed's <author>
+(define opt-feed-title   "Faiz Surani")
+(define opt-feed-site    "https://faizsurani.com") ; This should end with /
 
 #|
   You should customize the timezone/DST settings to match those of the

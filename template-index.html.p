@@ -20,8 +20,8 @@
     ◊(map ->html (select-from-doc 'body here))
 
     <p>
-        <a href="colophon.html">Colophon</a> &middot;
-        <a href="bookindex.html">Index</a> &middot;
+        <a href="about.html">About Me</a> &middot;
+        <a href="resume.pdf">Resume</a> &middot;
         <a href="feed.xml"><span class="caps">RSS</span> Feed</a>
     </p>
 

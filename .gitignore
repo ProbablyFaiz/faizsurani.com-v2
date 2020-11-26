@@ -12,3 +12,4 @@ pollen-cache/
 drafts/
 pollen.cache
 .DS_Store
+!resume.pdf
