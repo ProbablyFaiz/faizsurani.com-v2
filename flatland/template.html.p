@@ -32,11 +32,11 @@
         ◊when/splice[(and (next here) (member (next here) (siblings here)))]{
             <li><a href="◊|path-prefix|◊|(next here)|">Next &rarr;</a></li>
         }
-        ◊when/splice[(pdfable? source-file)]{
-            <li><a href="◊pdfname[source-file]">
-                  <img src="◊|path-prefix|css/pdficon.png" height="15" alt="Download PDF" />
-                  <span class="caps">PDF</span></a></li>
-        }
+       ◊; ◊when/splice[(pdfable? source-file)]{
+       ◊;     <li><a href="◊pdfname[source-file]">
+       ◊;           <img src="◊|path-prefix|css/pdficon.png" height="15" alt="Download PDF" />
+       ◊;           <span class="caps">PDF</span></a></li>
+       ◊; }
         ◊when/splice[(string-contains path-prefix "/")]{
             <li style="width: auto;">
               <a href="◊|pollen-source-listing|" title="View the Pollen source for this file"
