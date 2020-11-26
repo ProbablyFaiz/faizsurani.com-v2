@@ -62,9 +62,6 @@
                 <input type="checkbox" id="margin-bookcover" class="margin-toggle" />
                 <span class="marginnote"><img src="flatland/img/flatland-cover.png" /></span></p>
 
-            <p>&rarr; <a href="flatland/flatland-book.pdf"><img src="css/pdficon.png" height="15" width="15" style="width:auto" alt="PDF Download" />
-                Download the complete book</a> or <a href="https://www.createspace.com/6059658">order the print version</a></p>
-
             ◊(define (chapter-li chapter)
                      (->html `(li (span [[class "smallcaps"]]
                                      (a [[href ,(symbol->string chapter)]]
@@ -76,9 +73,6 @@
             </ol>
 
             <h3>Part II: Other Worlds</h3>
-            <ol start="13">
-                ◊(map chapter-li (children 'flatland/part-2.html))
-            </ol>
         </section>
     </article>
 </body>
