@@ -1,30 +1,31 @@
-#lang pollen
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>All Posts</title>
+  <link rel="stylesheet" href="css/tufte.css"/>
+  <link rel="stylesheet" href="css/joel.css"/>
+  <link rel="alternate" type="application/atom+xml" title="Atom feed" href="feed.xml" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+   img { mix-blend-mode: multiply; }
+  </style>
+</head>
+<body><article>
+    <h1>All Posts</h1>
 
-◊(define-meta title "All Posts")
-◊(define-meta author "Faiz Surani")
+    <nav><ul>
+        <li><a href="index.html">&larr; Previous</a></li>
+        <li><a href="index.html">&uarr; Home</a></li>
 
-◊p{Going back to the dawn of time.}
 
-◊(define (list-posts-in-series s #:doc-publish-date [doc-publish-date #t])
-    (define (make-li post)
-        (if doc-publish-date
-            `(li (a [[href ,(symbol->string post)]]
-                    (span [[class "smallcaps"]] ,(select-from-metas 'title post))) " - " ,(pubdate->abbr-english (select-from-metas 'doc-publish-date post)))
-            `(li (a [[href ,(symbol->string post)]]
-                    (span [[class "smallcaps"]] ,(select-from-metas 'title post))))))
 
-    (define (is-child-post? p)
-        (equal? s (string->symbol (select-from-metas 'series p))))
+    </ul></nav>
 
-    `(section (h2 ,(select-from-metas 'title s))
-                (ul ,@(map make-li (filter is-child-post? (children 'posts.html))))))
-
-◊;    For every child of series.html in the pagetree, we list that page’s
-◊; title and summary, then we list all the children of posts.html that
-◊; specify that series in their meta definitions.
-
-◊; ◊(->html (list-posts-in-series 'series/notebook.html #:author #f))
-
-◊(->html (list-posts-in-series 'series/poems.html))
-
-◊(->html (list-posts-in-series 'series/law.html))
+        <p>Going back to the dawn of time.</p>
+</article>
+<footer><hr>
+<p>My name is Faiz Surani. I’m currently a Computing major in the College of Creative Studies at UC Santa Barbara. You can find me on <a href="https://github.com/ProbablyFaiz">GitHub</a>, <a href="https://www.linkedin.com/in/faiz-s-74a510126/">LinkedIn</a>, or <a href="mailto:faiz.surani@gmail.com">by email</a>.</p>
+</footer>
+</body>
+</html>
