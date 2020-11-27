@@ -19,7 +19,6 @@
         <li><a href="index.html">&uarr; Home</a></li>
         <li><a href="pollen.lua">Next &rarr;</a></li>
 
-
     </ul></nav>
 
         <p>$if(tags)$$endif$</p><p>$body$</p>

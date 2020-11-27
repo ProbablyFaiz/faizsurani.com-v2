@@ -38,11 +38,11 @@
                   <img src="◊|path-prefix|css/pdficon.png" width="15" height="15" alt="Download PDF" />
                   <span class="caps" style="font-style: normal">PDF</span></a></li>
         }
-        ◊when/splice[(string-contains path-prefix "/")]{
-            <li style="width: auto;">
-              <a href="◊|pollen-source-listing|" title="View the Pollen source for this file"
-                 class=" sourcelink code">&loz; Pollen Source</a></li>
-        }
+    ◊;    ◊when/splice[(string-contains path-prefix "/")]{
+    ◊;        <li style="width: auto;">
+    ◊;          <a href="◊|pollen-source-listing|" title="View the Pollen source for this file"
+    ◊;             class=" sourcelink code">&loz; Pollen Source</a></li>
+    ◊;    }
     </ul></nav>
 
 	◊(map ->html (select-from-doc 'body here))
