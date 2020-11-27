@@ -7,6 +7,6 @@
         "Be patient, for the world is broad and wide."
         }}
     ◊p{
-        ◊hyperlink["about.html"]{ → }
+        ◊hyperlink["01-chapter.html"]{ → }
     }
 }

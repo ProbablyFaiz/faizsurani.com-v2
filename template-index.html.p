@@ -20,9 +20,9 @@
     ◊(map ->html (select-from-doc 'body here))
 
     <p>
-        <a href="about.html">About Me</a> &middot;
-        <a href="resume.pdf">Resume</a> &middot;
-        <a href="feed.xml"><span class="caps">RSS</span> Feed</a>
+        <a href="about.html">About Me</a> 
+        &middot; <a href="resume.pdf">Resume</a> 
+        ◊;&middot; <a href="feed.xml"><span class="caps">RSS</span> Feed</a>
     </p>
 
     ◊;    This is a simple way of listing pages by an arbitrary grouping.
