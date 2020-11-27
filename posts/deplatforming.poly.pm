@@ -5,10 +5,11 @@
 ◊(define-meta author           "Faiz Surani")
 ◊(define-meta summary          "How YouTube's demonetization snafu shows the need to rethink antitrust policy.")
 ◊(define-meta series           "series/law.html")
+◊(define-meta post-type        "types/blog.html")
 
-On May 30, YouTube became embroiled in yet another ◊hyperlink["https://buzzfeednews.com/article/mathonan/susan-wojcicki-youtube"]{hate speech controversy} as LGBT writer Carlos Maza’s viral tweet drew attention to far-right online commentator Steven Crowder repeatedly referring to Maza as a “lispy queer.” YouTube’s response, after several days of radio silence, contradicted itself several times and culminated in this instant classic of corporate mishaps:
+◊newthought{On May 30}, YouTube became embroiled in yet another ◊hyperlink["https://buzzfeednews.com/article/mathonan/susan-wojcicki-youtube"]{hate speech controversy} as LGBT writer Carlos Maza’s viral tweet drew attention to far-right online commentator Steven Crowder repeatedly referring to Maza as a “lispy queer.” YouTube’s response, after several days of radio silence, contradicted itself several times and culminated in this instant classic of corporate mishaps:
 
-◊figure["img/deplatforming-yt-tweet.jpeg"]{When you definitely haven't missed the point.}
+◊figure["img/deplatforming-yt-tweet.jpeg"]{When you definitely haven't missed the point. ◊hyperlink["https://twitter.com/teamyoutube/status/1136356046887313408?lang=en"]{Source.}}
 
 When the dust settled, YouTube chose to demonetize (that is, disallow him from collecting ad revenue on any of his videos) Mr. Crowder’s entire channel but did not ban him altogether. Though this was not quite the full “deplatforming” we’ve seen in recent months as when ◊hyperlink["https://www.reuters.com/article/us-apple-infowars/apple-inc-bans-alex-jones-app-for-objectionable-content-idUSKCN1LO04G"]{most major social media platforms banned Alex Jones} or when ◊hyperlink["https://blog.cloudflare.com/why-we-terminated-daily-stormer/"]{Cloudflare banned the Daily Stormer} in the aftermath of Charlottesville, it nonetheless kicked off a predictable ◊hyperlink["https://www.realclearpolitics.com/video/2019/06/07/tucker_carlson_voxs_carlos_maza_a_classic_leftist_archetype_a_fascist_posing_as_a_victim.html"]{round of outrage from conservative media} accusing YouTube of censorship and ◊hyperlink["https://thefederalist.com/2019/06/06/youtube-costs-commentators-free-speech/"]{depriving Mr. Crowder of his First Amendment rights}.
 

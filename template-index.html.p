@@ -33,47 +33,61 @@
     ◊;      This function used to be located in pollen.rkt. But since it generates
     ◊;    output that's specific to our HTML design, it's a good idea to place it
     ◊;    right in the template.
-    ◊(define (list-posts-in-series s #:doc-publish-date [doc-publish-date #t])
+    ◊(define (list-posts-of-type s)
         (define (make-li post)
-          (if doc-publish-date
-              `(li (a [[href ,(symbol->string post)]]
-                      (span [[class "smallcaps"]] ,(select-from-metas 'title post))) " - " ,(pubdate->abbr-english (select-from-metas 'doc-publish-date post)))
-              `(li (a [[href ,(symbol->string post)]]
-                      (span [[class "smallcaps"]] ,(select-from-metas 'title post))))))
-
+            `(li (a [[href ,(symbol->string post)]] (span [[class "smallcaps"]] ,(select-from-metas 'title post)))
+                ,(if (select-from-metas 'doc-publish-date post)
+                    (string-append " - " (pubdate->abbr-english (select-from-metas 'doc-publish-date post)))
+                    ""
+                )
+            )
+        )
+        ◊; (define (make-li post)
+        ◊;   (if (select-from-metas 'doc-publish-date post)
+        ◊;       `(li (a [[href ,(symbol->string post)]]
+        ◊;               (span [[class "smallcaps"]] ,(select-from-metas 'title post))) " - " 
+        ◊;                 ,(pubdate->abbr-english (select-from-metas 'doc-publish-date post))
+        ◊;         )
+        ◊;       `(li (a [[href ,(symbol->string post)]]
+        ◊;               (span [[class "smallcaps"]] ,(select-from-metas 'title post)))
+        ◊;        )
+        ◊;   )
+        ◊; )
+            
         (define (is-child-post? p)
-          (equal? s (string->symbol (select-from-metas 'series p))))
+          (equal? s (select-from-metas 'post-type p))
+        )
 
-        `(section (h2 ,(select-from-metas 'title s))
-                  (ul ,@(map make-li (filter is-child-post? (children 'posts.html))))))
+        `(section (h2 , (select-from-metas 'title s))
+                  (ul ,@(map make-li (filter is-child-post? (children 'posts.html))))
+        )
+    )
 
     ◊;    For every child of series.html in the pagetree, we list that page’s
     ◊; title and summary, then we list all the children of posts.html that
     ◊; specify that series in their meta definitions.
 
-    ◊; ◊(->html (list-posts-in-series 'series/notebook.html #:author #f))
+    ◊; ◊(->html (list-posts-of-type 'series/notebook.html #:author #f))
+    
+    ◊(->html (list-posts-of-type "types/blog.html"))
 
-    ◊(->html (list-posts-in-series 'series/poems.html))
+        ◊; <section>
+        ◊;     <h2>Flatland: A Romance of Many Dimensions</h2>
 
-    ◊(->html (list-posts-in-series 'series/law.html))
+        ◊;     <p><label for="margin-bookcover" class="margin-toggle">&#8853;</label>
+        ◊;         <input type="checkbox" id="margin-bookcover" class="margin-toggle" />
+        ◊;         <span class="marginnote"><img src="flatland/img/flatland-cover.png" /></span></p>
 
-        <section>
-            <h2>Flatland: A Romance of Many Dimensions</h2>
+        ◊;     ◊(define (chapter-li chapter)
+        ◊;              (->html `(li (span [[class "smallcaps"]]
+        ◊;                              (a [[href ,(symbol->string chapter)]]
+        ◊;                                 ,(select-from-metas 'title chapter))))))
 
-            <p><label for="margin-bookcover" class="margin-toggle">&#8853;</label>
-                <input type="checkbox" id="margin-bookcover" class="margin-toggle" />
-                <span class="marginnote"><img src="flatland/img/flatland-cover.png" /></span></p>
-
-            ◊(define (chapter-li chapter)
-                     (->html `(li (span [[class "smallcaps"]]
-                                     (a [[href ,(symbol->string chapter)]]
-                                        ,(select-from-metas 'title chapter))))))
-
-            <h3>Part I: This World</h3>
-            <ol>
-                ◊(map chapter-li (children 'flatland/part-1.html))
-            </ol>
-        </section>
+        ◊;     <h3>Part I: This World</h3>
+        ◊;     <ol>
+        ◊;         ◊(map chapter-li (children 'flatland/part-1.html))
+        ◊;     </ol>
+        ◊; </section>
     </article>
 </body>
 </html>

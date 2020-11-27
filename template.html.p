@@ -21,7 +21,7 @@
 <body><article>
     <h1>◊(hash-ref metas 'title)</h1>
     ◊when/splice[(and (select-from-metas 'author metas) (select-from-metas 'doc-publish-date metas))]{
-        <h3>◊(hash-ref metas 'author) &middot; ◊(pubdate->english (hash-ref metas 'doc-publish-date))</h3>
+        <h3>◊(hash-ref metas 'author) &middot; ◊(pubdate->abbr-english (hash-ref metas 'doc-publish-date))</h3>
     }
     <nav><ul>
         ◊when/splice[(and (previous here) (not (eq? (parent here) (previous here))))]{
