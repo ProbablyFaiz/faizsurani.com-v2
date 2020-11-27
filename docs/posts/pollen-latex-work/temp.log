@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  27 NOV 2020 02:39
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  27 NOV 2020 02:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -619,77 +619,28 @@ LaTeX Info: Redefining \] on input line 2860.
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
 Package fontspec Info: Could not resolve font "Valkyrie T3/B" (it probably
 (fontspec)             doesn't exist).
 
 
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3/I' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3/I' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3/BI' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3/BI' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
 Package fontspec Info: Font family 'ValkyrieT3(0)' created for font 'Valkyrie
 (fontspec)             T3' with options
-(fontspec)             [Ligatures=TeX,Mapping=tex-text,Ligatures={Common,
-(fontspec)             Rare, Discretionary},Numbers=OldStyle].
+(fontspec)             [Ligatures=TeX,Mapping=tex-text,Numbers=OldStyle].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Valkyrie
-(fontspec)             T3/OT:script=latn;language=dflt;+liga;+onum;mapping=tex-
-text;"
+(fontspec)             T3/OT:script=latn;language=dflt;+onum;mapping=tex-text;"
+
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Valkyrie
-(fontspec)             T3/I/OT:script=latn;language=dflt;+liga;+onum;mapping=te
-x-text;"
+(fontspec)             T3/I/OT:script=latn;language=dflt;+onum;mapping=tex-text
+;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Valkyrie
-(fontspec)             T3/BI/OT:script=latn;language=dflt;+liga;+onum;mapping=t
-ex-text;"
+(fontspec)             T3/BI/OT:script=latn;language=dflt;+onum;mapping=tex-tex
+t;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 
@@ -752,6 +703,7 @@ Space,Mapping=tex-text,Scale=MatchLowercase].
 (fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
 (fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
 (fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
@@ -960,77 +912,29 @@ LaTeX Warning: Marginpar on page 1 moved.
 File: img/post-artifact-full-large.png Graphic file (type bmp)
 <img/post-artifact-full-large.png>
 
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
 Package fontspec Info: Could not resolve font "Valkyrie T3/B" (it probably
 (fontspec)             doesn't exist).
 
 
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3/I' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3/I' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3/BI' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3/BI' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
 Package fontspec Info: Font family 'ValkyrieT3(1)' created for font 'Valkyrie
 (fontspec)             T3' with options
-(fontspec)             [Ligatures=TeX,Mapping=tex-text,Ligatures={Common,
-(fontspec)             Rare, Discretionary},Numbers=OldStyle,LetterSpace=10].
+(fontspec)             [Ligatures=TeX,Mapping=tex-text,Numbers=OldStyle,LetterS
+pace=10].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Valkyrie
-(fontspec)             T3/OT:script=latn;language=dflt;letterspace=10;+liga;+on
-um;mapping=tex-text;"
+(fontspec)             T3/OT:script=latn;language=dflt;letterspace=10;+onum;map
+ping=tex-text;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Valkyrie
-(fontspec)             T3/I/OT:script=latn;language=dflt;letterspace=10;+liga;+
-onum;mapping=tex-text;"
+(fontspec)             T3/I/OT:script=latn;language=dflt;letterspace=10;+onum;m
+apping=tex-text;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Valkyrie
-(fontspec)             T3/BI/OT:script=latn;language=dflt;letterspace=10;+liga;
-+onum;mapping=tex-text;"
+(fontspec)             T3/BI/OT:script=latn;language=dflt;letterspace=10;+onum;
+mapping=tex-text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 
@@ -1068,18 +972,6 @@ File: img/flatland-pageflipping-t-x.png Graphic file (type bmp)
 
 LaTeX Warning: Marginpar on page 2 moved.
 
-
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
 [2]
 Missing character: There is no ’ in font ectt1000!
 Missing character: There is no ’ in font ectt1000!
@@ -1105,18 +997,6 @@ Package bibentry Warning: You have used \nobibliography*
 (bibentry)                You may not be able to run BibTeX.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
-
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
-
-Package fontspec Warning: OpenType feature 'Ligatures=Common, Rare,
-(fontspec)                Discretionary' (dlig) not available for font
-(fontspec)                'Valkyrie T3' with script 'CustomDefault' and
-(fontspec)                language 'Default'.
-
 [3]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
 
@@ -1134,12 +1014,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
  ) 
 Here is how much of TeX's memory you used:
  15789 strings out of 479418
- 291004 string characters out of 5884586
- 815126 words of memory out of 5000000
+ 290884 string characters out of 5884586
+ 815022 words of memory out of 5000000
  32978 multiletter control sequences out of 15000+600000
  536058 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 63i,11n,119p,1114b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,11n,119p,1114b,599s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /Users/faiz/Development/Personal/faizsurani.com-v2/posts/poll
 en-latex-work/temp.pdf (3 pages).

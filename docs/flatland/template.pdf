@@ -27,7 +27,7 @@
 
     % Set the main and monospaced fonts
     %
-    \setromanfont[Mapping=tex-text,Ligatures={Common, Rare, Discretionary},Numbers=OldStyle]{Valkyrie T3}
+    \setromanfont[Mapping=tex-text,Numbers=OldStyle]{Valkyrie T3}
     \setmonofont[Mapping=tex-text,Scale=MatchLowercase]{Triplicate T4c}
 
     % Set up the images/graphics package
