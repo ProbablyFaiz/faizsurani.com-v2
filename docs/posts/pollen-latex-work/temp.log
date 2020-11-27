@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  27 NOV 2020 02:54
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  27 NOV 2020 15:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -878,7 +878,11 @@ p.out)
 \@outlinefile=\write4
 \openout4 = `temp.out'.
 
- ABD: EverySelectfont initializing macros
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 78.
 
 *geometry* driver: auto-detecting
