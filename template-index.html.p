@@ -33,11 +33,11 @@
     ◊;      This function used to be located in pollen.rkt. But since it generates
     ◊;    output that's specific to our HTML design, it's a good idea to place it
     ◊;    right in the template.
-    ◊(define (list-posts-in-series s #:author [author #t])
+    ◊(define (list-posts-in-series s #:doc-publish-date [doc-publish-date #t])
         (define (make-li post)
-          (if author
+          (if doc-publish-date
               `(li (a [[href ,(symbol->string post)]]
-                      (span [[class "smallcaps"]] ,(select-from-metas 'title post))) " by " ,(select-from-metas 'author post))
+                      (span [[class "smallcaps"]] ,(select-from-metas 'title post))) " - " ,(select-from-metas 'doc-publish-date post))
               `(li (a [[href ,(symbol->string post)]]
                       (span [[class "smallcaps"]] ,(select-from-metas 'title post))))))
 
@@ -51,7 +51,7 @@
     ◊; title and summary, then we list all the children of posts.html that
     ◊; specify that series in their meta definitions.
 
-    ◊(->html (list-posts-in-series 'series/notebook.html #:author #f))
+    ◊; ◊(->html (list-posts-in-series 'series/notebook.html #:author #f))
 
     ◊(->html (list-posts-in-series 'series/poems.html))
 
@@ -71,8 +71,6 @@
             <ol>
                 ◊(map chapter-li (children 'flatland/part-1.html))
             </ol>
-
-            <h3>Part II: Other Worlds</h3>
         </section>
     </article>
 </body>

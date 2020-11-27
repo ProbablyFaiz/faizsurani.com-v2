@@ -3,21 +3,14 @@
 index.html
 ◊posts.html{
     posts/01-homes.html
-    posts/02-milkweed.html
-    posts/03-strange.html
-    posts/04-en-route.html
 }
 ◊series.html{
     series/notebook.html
     series/poems.html
 }
-flatland/00-preface.html
 ◊flatland/part-1.html{
     flatland/01-chapter.html
     flatland/02-chapter.html
-    flatland/03-chapter.html
-    flatland/04-chapter.html
-    flatland/05-chapter.html
     posts/web-books.html
 }
 about.html
