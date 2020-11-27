@@ -3,12 +3,12 @@
 ◊(define-meta title            "About Me")
 ◊(define-meta doc-publish-date "2020-11-26")
 
-These pages are my experiment in ◊hyperlink["posts/web-books.html"]{marrying web documents with printed books}: generating high quality print-ready PDF files from the same markup used to create the web pages.
+Hi, I'm Faiz (pronounced ◊smallcaps{fez}). I'm currently a Computing major in the ◊hyperlink["ccs.ucsb.edu"]{College of Creative Studies} at UC Santa Barbara.
 
-For this I am using ◊hyperlink["http://pollenpub.com"]{Pollen}, a system and language for publishing books on the web or anywhere else. Most of the visual design and layout comes from the ◊hyperlink["https://github.com/edwardtufte/tufte-css"]{Tufte CSS project}, and the ◊hyperlink["https://tufte-latex.github.io/tufte-latex/"]{Tufte-◊Latex[]} project on which it is based.
+In the field of computer science, my current interests include scalable systems, human-centered design, and Racket
 
-The Pollen source code for this site is available ◊hyperlink["https://github.com/otherjoel/try-pollen"]{on Github}. The content and code on this site are available for liberal reuse as described in the ◊hyperlink["https://github.com/otherjoel/try-pollen/blob/master/LICENSE.md"]{license} provided in the repository.
+Outside of computer science, I'm also passionate about public policy and constitutional law. My recent writing in these areas includes articles on the religious liberty case 
 
-On most pages (including this one!) you can click the PDF link to see the ◊Latex[]-generated print version of that page, as well as a link to see the Pollen source code for that page. Again, the point of interest here isn’t that each page has a corresponding PDF, but that the same text files generate both the website and the PDF files, using a custom, light-weight markup that can take full advantage of both HTML and ◊Latex[].
+This website is created with ◊hyperlink["https://github.com/mbutterick/pollen"]{Pollen}, an open-source publishing system built in Racket. As much as I'm enjoying playing around with Racket, I can't take credit for the incredible work done by Joel Dueck, whose ◊hyperlink["https://github.com/otherjoel/try-pollen"]{try-pollen} project provides the bulk of the code powering this website.
 
-I'm ◊hyperlink["http://twitter.com/joeld"]{◊code{@joeld}} on Twitter and ◊hyperlink["https://keybase.io/joeld"]{verified on Keybase}. You can also find me at my ◊hyperlink["http://tilde.club/~joeld"]{tilde.club page}, and my main site, ◊hyperlink["http://thelocalyarn.com/blog"]{◊i{The Local Yarn}}, neither of which (yet) use Pollen.
+If you have an interesting opportunity or good book recommendation, I'd love to ◊hyperlink["mailto:faiz.surani@gmail.com"]{hear from you}.

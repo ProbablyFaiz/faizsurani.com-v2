@@ -55,6 +55,8 @@
 
     ◊(->html (list-posts-in-series 'series/poems.html))
 
+    ◊(->html (list-posts-in-series 'series/law.html))
+
         <section>
             <h2>Flatland: A Romance of Many Dimensions</h2>
 

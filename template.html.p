@@ -21,7 +21,7 @@
 <body><article>
     <h1>◊(hash-ref metas 'title)</h1>
     ◊when/splice[(select-from-metas 'author metas)]{
-        <h2>◊(hash-ref metas 'author)</h2>
+        <h3>◊(hash-ref metas 'author) &middot; ◊(pubdate->english (hash-ref metas 'doc-publish-date))</h3>
     }
     <nav><ul>
         ◊when/splice[(and (previous here) (not (eq? (parent here) (previous here))))]{
@@ -47,9 +47,9 @@
 
 	◊(map ->html (select-from-doc 'body here))
 </article>
-◊when/splice[(equal? "Joel Dueck" (select-from-metas 'author here))]{
+◊when/splice[(equal? "Faiz Surani" (select-from-metas 'author here))]{
     <footer><hr>
-    <p>My name is <a href="https://keybase.io/joeld">Joel Dueck</a>. I’ve been <a href="https://thelocalyarn.com/blog">writing online</a> since 1998. You can contact me on the Twitters <a href="https://twitter.com/joeld">@joeld</a> or by email at <a href="mailto:joel@jdueck.net">joel@jdueck.net</a>, or see my <a href="https://github.com/otherjoel">Github profile</a>. <a href="◊|path-prefix|colophon.html">Read about this site</a>.</p>
+    <p>My name is Faiz Surani. I’m currently a Computing major in the College of Creative Studies at UC Santa Barbara. You can find me on <a href="https://github.com/ProbablyFaiz">GitHub</a>, <a href="https://www.linkedin.com/in/faiz-s-74a510126/">LinkedIn</a>, or <a href="mailto:faiz.surani@gmail.com">by email</a>.</p>
     </footer>
 }
 </body>

@@ -3,9 +3,10 @@
 index.html
 ◊posts.html{
     posts/01-homes.html
+    posts/deplatforming.html
 }
 ◊series.html{
-    series/notebook.html
+    series/law.html
     series/poems.html
 }
 ◊flatland/part-1.html{
