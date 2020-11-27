@@ -8,6 +8,7 @@
          racket/match
          racket/path
          racket/string
+         gregor
          (only-in srfi/13
                   string-contains)
          txexpr)
@@ -437,3 +438,7 @@ Index functionality: allows creation of a book-style keyword index.
 |#
 (define (pubdate->english datetime)
   (date->string (datestring->date datetime)))
+
+(define (pubdate->abbr-english datetime)
+  (~t (iso8601->date datetime) "MMM. dd, YYYY")
+)

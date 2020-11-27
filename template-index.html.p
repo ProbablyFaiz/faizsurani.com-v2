@@ -37,7 +37,7 @@
         (define (make-li post)
           (if doc-publish-date
               `(li (a [[href ,(symbol->string post)]]
-                      (span [[class "smallcaps"]] ,(select-from-metas 'title post))) " - " ,(select-from-metas 'doc-publish-date post))
+                      (span [[class "smallcaps"]] ,(select-from-metas 'title post))) " - " ,(pubdate->abbr-english (select-from-metas 'doc-publish-date post)))
               `(li (a [[href ,(symbol->string post)]]
                       (span [[class "smallcaps"]] ,(select-from-metas 'title post))))))
 

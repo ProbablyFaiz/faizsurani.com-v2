@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title            "Homes")
-◊(define-meta doc-publish-date "2015-08-25 08:29")
+◊(define-meta doc-publish-date "2015-08-25")
 ◊(define-meta author           "Faiz")
 ◊(define-meta summary          "A sestina in mock-praise of domesticity")
 ◊(define-meta series           "series/poems.html")

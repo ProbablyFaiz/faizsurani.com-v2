@@ -20,7 +20,7 @@
 </head>
 <body><article>
     <h1>◊(hash-ref metas 'title)</h1>
-    ◊when/splice[(select-from-metas 'author metas)]{
+    ◊when/splice[(and (select-from-metas 'author metas) (select-from-metas 'doc-publish-date metas))]{
         <h3>◊(hash-ref metas 'author) &middot; ◊(pubdate->english (hash-ref metas 'doc-publish-date))</h3>
     }
     <nav><ul>
@@ -33,11 +33,11 @@
         ◊when/splice[(and (next here) (member (next here) (siblings here)))]{
             <li><a href="◊|path-prefix|◊|(next here)|">Next &rarr;</a></li>
         }
-      ◊;  ◊when/splice[(pdfable? source-file)]{
-      ◊;      <li><a href="◊pdfname[source-file]">
-      ◊;            <img src="◊|path-prefix|css/pdficon.png" width="15" height="15" alt="Download PDF" />
-      ◊;            <span class="caps" style="font-style: normal">PDF</span></a></li>
-      ◊;  }
+        ◊when/splice[(pdfable? source-file)]{
+            <li><a href="◊pdfname[source-file]">
+                  <img src="◊|path-prefix|css/pdficon.png" width="15" height="15" alt="Download PDF" />
+                  <span class="caps" style="font-style: normal">PDF</span></a></li>
+        }
         ◊when/splice[(string-contains path-prefix "/")]{
             <li style="width: auto;">
               <a href="◊|pollen-source-listing|" title="View the Pollen source for this file"

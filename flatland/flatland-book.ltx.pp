@@ -88,11 +88,11 @@
 
     % Set the main and monospaced fonts
     %
-    \setromanfont[Mapping=tex-text,Ligatures={Common, Rare, Discretionary},Numbers=OldStyle]{Adobe Caslon Pro}
+    \setromanfont[Mapping=tex-text,Ligatures={Common, Rare, Discretionary},Numbers=OldStyle]{Valkyrie T3}
     \setmonofont[Mapping=tex-text,Scale=MatchLowercase]{Triplicate T4c}
 
     % For this book, sans-serif fonts would seem to be anachronistic.
-    \setsansfont[Mapping=tex-text,Ligatures={Common, Rare, Discretionary},Numbers=OldStyle]{Adobe Caslon Pro}
+    \setsansfont[Mapping=tex-text,Ligatures={Common, Rare, Discretionary},Numbers=OldStyle]{Triplicate T4c}
 
     %%
     % For nicely typeset tabular material
