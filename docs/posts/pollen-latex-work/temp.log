@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  27 NOV 2020 02:46
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  27 NOV 2020 02:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -625,7 +625,9 @@ Package fontspec Info: Could not resolve font "Valkyrie T3/B" (it probably
 
 Package fontspec Info: Font family 'ValkyrieT3(0)' created for font 'Valkyrie
 (fontspec)             T3' with options
-(fontspec)             [Ligatures=TeX,Mapping=tex-text,Numbers=OldStyle].
+(fontspec)             [Ligatures=TeX,Mapping=tex-text,Numbers=OldStyle,SmallCa
+psFont={Valkyrie
+(fontspec)             C3}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
@@ -633,15 +635,23 @@ Package fontspec Info: Font family 'ValkyrieT3(0)' created for font 'Valkyrie
 (fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Valkyrie
 (fontspec)             T3/OT:script=latn;language=dflt;+onum;mapping=tex-text;"
 
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Valkyrie
+(fontspec)             C3/OT:script=latn;language=dflt;+onum;mapping=tex-text;"
+
 (fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Valkyrie
 (fontspec)             T3/I/OT:script=latn;language=dflt;+onum;mapping=tex-text
 ;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Valkyrie
+(fontspec)             C3/OT:script=latn;language=dflt;+onum;mapping=tex-text;"
+
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Valkyrie
 (fontspec)             T3/BI/OT:script=latn;language=dflt;+onum;mapping=tex-tex
 t;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Valkyrie
+(fontspec)             C3/OT:script=latn;language=dflt;+onum;mapping=tex-text;"
+
 
 
 Package fontspec Info: Triplicate T4c scale = 1.059468833813951.
@@ -918,8 +928,9 @@ Package fontspec Info: Could not resolve font "Valkyrie T3/B" (it probably
 
 Package fontspec Info: Font family 'ValkyrieT3(1)' created for font 'Valkyrie
 (fontspec)             T3' with options
-(fontspec)             [Ligatures=TeX,Mapping=tex-text,Numbers=OldStyle,LetterS
-pace=10].
+(fontspec)             [Ligatures=TeX,Mapping=tex-text,Numbers=OldStyle,SmallCa
+psFont={Valkyrie
+(fontspec)             C3},LetterSpace=10].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
@@ -927,19 +938,23 @@ pace=10].
 (fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Valkyrie
 (fontspec)             T3/OT:script=latn;language=dflt;letterspace=10;+onum;map
 ping=tex-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Valkyrie
+(fontspec)             C3/OT:script=latn;language=dflt;letterspace=10;+onum;map
+ping=tex-text;"
 (fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Valkyrie
 (fontspec)             T3/I/OT:script=latn;language=dflt;letterspace=10;+onum;m
 apping=tex-text;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Valkyrie
+(fontspec)             C3/OT:script=latn;language=dflt;letterspace=10;+onum;map
+ping=tex-text;"
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Valkyrie
 (fontspec)             T3/BI/OT:script=latn;language=dflt;letterspace=10;+onum;
 mapping=tex-text;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
-
-
-LaTeX Font Warning: Font shape `TU/ValkyrieT3(1)/m/sc' undefined
-(Font)              using `TU/ValkyrieT3(1)/m/n' instead on input line 92.
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Valkyrie
+(fontspec)             C3/OT:script=latn;language=dflt;letterspace=10;+onum;map
+ping=tex-text;"
 
 
 LaTeX Font Warning: Font shape `TU/ValkyrieT3(0)/b/n' undefined
@@ -953,10 +968,6 @@ LaTeX Warning: Marginpar on page 2 moved.
 
 
 LaTeX Warning: Marginpar on page 2 moved.
-
-
-LaTeX Font Warning: Font shape `TU/ValkyrieT3(0)/m/sc' undefined
-(Font)              using `TU/ValkyrieT3(0)/m/n' instead on input line 98.
 
 
 LaTeX Warning: Marginpar on page 2 moved.
@@ -1013,13 +1024,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
  ) 
 Here is how much of TeX's memory you used:
- 15789 strings out of 479418
- 290884 string characters out of 5884586
- 815022 words of memory out of 5000000
- 32978 multiletter control sequences out of 15000+600000
- 536058 words of font info for 76 fonts, out of 8000000 for 9000
+ 15803 strings out of 479418
+ 291493 string characters out of 5884586
+ 815108 words of memory out of 5000000
+ 32986 multiletter control sequences out of 15000+600000
+ 536098 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 63i,11n,119p,1114b,599s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,11n,119p,1114b,603s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /Users/faiz/Development/Personal/faizsurani.com-v2/posts/poll
 en-latex-work/temp.pdf (3 pages).
