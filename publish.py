@@ -9,8 +9,12 @@ site_dir = os.path.dirname(os.path.realpath(__file__))
 
 dest_dir = os.path.join("..", "pollen-publish", "docs")
 Path(dest_dir).mkdir(parents=True, exist_ok=True)
-process = subprocess.Popen(f'raco setup -j 4 && raco pollen render -r -j 4 && raco pollen render -r --target pdf -j 4 && raco pollen publish {site_dir} {dest_dir}', shell=True, stdout=subprocess.PIPE)
-process.wait()
+render_process = subprocess.Popen(f'raco pollen reset && raco setup -j 4 && raco pollen render -r -j 4 && raco pollen render -r --target pdf -j 4',
+   shell=True, stdout=subprocess.PIPE)
+render_process.wait()
+publish_process = subprocess.Popen(f'raco pollen publish {site_dir} {dest_dir}',
+   shell=True, stdout=subprocess.PIPE)
+publish_process.wait()
 
 files_to_delete = ['publish.py', 'publish.pyc', 'README.md', 'TEMPLATE-LICENSE.MD']
 for file in files_to_delete:
