@@ -6,4 +6,4 @@
 ◊(define-meta title            "Faiz Surani")
 ◊(define-meta author           "Welcome!")
 
-◊p{I'm Faiz, a Computing major at UC Santa Barbara. Here you can find some stuff I've written and done.}
+◊p{I'm Faiz. Here you can find some of the stuff I've written and worked on.}
