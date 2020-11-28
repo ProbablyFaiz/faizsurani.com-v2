@@ -1,17 +1,17 @@
 #lang pollen
 
 index.html
-◊posts.html{
-    posts/01-homes.html
-    posts/deplatforming.html
+◊all.html{
+    writing/third-party-doctrine.html
+    writing/independent-legislature-doctrine.html
+    writing/green-marshall-plan.html
+    blog/deplatforming.html
 }
 ◊series.html{
     series/law.html
-    series/poems.html
+    series/policy.html
 }
-◊flatland/part-1.html{
-    flatland/01-chapter.html
-    flatland/02-chapter.html
-    posts/web-books.html
+◊types.html{
+    types/blog.html
 }
 about.html

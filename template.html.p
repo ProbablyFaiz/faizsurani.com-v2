@@ -21,7 +21,13 @@
 <body><article>
     <h1>◊(hash-ref metas 'title)</h1>
     ◊when/splice[(and (select-from-metas 'author metas) (select-from-metas 'doc-publish-date metas))]{
-        <h3>◊(hash-ref metas 'author) &middot; ◊(pubdate->abbr-english (hash-ref metas 'doc-publish-date))</h3>
+        <h3>
+            ◊(hash-ref metas 'author)
+            &middot; ◊(pubdate->abbr-english (hash-ref metas 'doc-publish-date))
+            ◊when/splice[(select-from-metas 'pdf-url metas)]{
+                &middot; <a href="◊|(hash-ref metas 'pdf-url)|">Download PDF</a>
+            }
+        </h3>
     }
     <nav><ul>
         ◊when/splice[(and (previous here) (not (eq? (parent here) (previous here))))]{
@@ -33,8 +39,8 @@
         ◊when/splice[(and (next here) (member (next here) (siblings here)))]{
             <li><a href="◊|path-prefix|◊|(next here)|">Next &rarr;</a></li>
         }
-        ◊when/splice[(pdfable? source-file)]{
-            <li><a href="◊pdfname[source-file]">
+        ◊when/splice[(or (select-from-metas 'pdf-url metas) (pdfable? source-file))]{
+            <li><a href="◊(or (select-from-metas 'pdf-url metas) ◊pdfname[source-file])">
                   <img src="◊|path-prefix|css/pdficon.png" width="15" height="15" alt="Download PDF" />
                   <span class="caps" style="font-style: normal">PDF</span></a></li>
         }
@@ -46,11 +52,13 @@
     </ul></nav>
 
 	◊(map ->html (select-from-doc 'body here))
+
+    ◊; ◊when/splice[(select-from-metas 'pdf-url metas)]{
+    ◊;     <embed style="height: 900px;" src="◊|(hash-ref metas 'pdf-url)|" width="800px" height="2100px" />
+    ◊; }
 </article>
-◊when/splice[(equal? "Faiz Surani" (select-from-metas 'author here))]{
     <footer><hr>
-    <p>My name is Faiz Surani. I’m currently a Computing major in the College of Creative Studies at UC Santa Barbara. You can find me on <a href="https://github.com/ProbablyFaiz">GitHub</a>, <a href="https://www.linkedin.com/in/faiz-s-74a510126/">LinkedIn</a>, or <a href="mailto:faiz.surani@gmail.com">by email</a>.</p>
+    <p>My name is Faiz. I’m currently a Computing major in the College of Creative Studies at UC Santa Barbara. You can find me on <a href="https://github.com/ProbablyFaiz">GitHub</a>, <a href="https://www.linkedin.com/in/faiz-s-74a510126/">LinkedIn</a>, or <a href="mailto:faiz.surani@gmail.com">by email</a>.</p>
     </footer>
-}
 </body>
 </html>

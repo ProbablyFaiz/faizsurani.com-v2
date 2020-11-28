@@ -1,6 +1,6 @@
 #lang pollen
 
 ◊(define-meta title "Series")
-◊(define-meta author "Joel Dueck")
+◊(define-meta author "Faiz Surani")
 
-◊p{You just know everything's gonna be in a list somewhere.}
+◊p{TODO: Create series index}

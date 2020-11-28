@@ -22,54 +22,67 @@
     <p>
         <a href="about.html">About Me</a> 
         &middot; <a href="resume.pdf">Resume</a> 
-        ◊;&middot; <a href="feed.xml"><span class="caps">RSS</span> Feed</a>
+        ◊; &middot; <a href="feed.xml"><span class="caps">RSS</span> Feed</a>
     </p>
 
-    ◊;    This is a simple way of listing pages by an arbitrary grouping.
-    ◊;    I call them ‘series’ but they're the same as what you’d call
-    ◊;    ‘categories’ in a blog.
-    ◊;      The function list-post-in-series takes a symbol and lists all the
-    ◊;    pages that name a given symbol in the 'series key of their metas.
-    ◊;      This function used to be located in pollen.rkt. But since it generates
-    ◊;    output that's specific to our HTML design, it's a good idea to place it
-    ◊;    right in the template.
+    ◊(define (list-groupings group-type)
+        (define (make-grouping-link group add-delimiter)
+            `(span [[class "smallcaps"]] 
+                (a [[href ,(symbol->string group)]] ,(select-from-metas 'title group))
+                ,(if add-delimiter
+                    `(span " " middot " ")
+                    ""
+                 )
+             )
+        )
+
+        (define (but-last xs) (reverse (cdr (reverse xs))))
+        (define (non-last-grouping-link grouping) (make-grouping-link grouping #t))
+        (define groupings (children group-type))
+
+        `(span 
+            ,@(map non-last-grouping-link (but-last groupings))
+            ,(make-grouping-link (car (reverse groupings)) #f)
+        )
+    )
+
+    <p>
+        Find by category: ◊(->html (list-groupings 'series.html))
+    </p>
+
     ◊(define (list-posts-of-type s)
         (define (make-li post)
             `(li (a [[href ,(symbol->string post)]] (span [[class "smallcaps"]] ,(select-from-metas 'title post)))
                 ,(if (select-from-metas 'doc-publish-date post)
                     (string-append " - " (pubdate->abbr-english (select-from-metas 'doc-publish-date post)))
                     ""
-                )
-            )
+                 )
+                ,(if (select-from-metas 'pdf-url post)
+                    `(span [[class "smallcaps"]] "  (" (a [[href ,(select-from-metas 'pdf-url post)]] "PDF") ")")
+                    ""
+                 )
+             )
         )
-        ◊; (define (make-li post)
-        ◊;   (if (select-from-metas 'doc-publish-date post)
-        ◊;       `(li (a [[href ,(symbol->string post)]]
-        ◊;               (span [[class "smallcaps"]] ,(select-from-metas 'title post))) " - " 
-        ◊;                 ,(pubdate->abbr-english (select-from-metas 'doc-publish-date post))
-        ◊;         )
-        ◊;       `(li (a [[href ,(symbol->string post)]]
-        ◊;               (span [[class "smallcaps"]] ,(select-from-metas 'title post)))
-        ◊;        )
-        ◊;   )
-        ◊; )
-            
-        (define (is-child-post? p)
-          (equal? s (select-from-metas 'post-type p))
+
+        (define (is-child-page? p)
+            (equal? s (select-from-metas 'post-type p))
         )
 
         `(section (h2 , (select-from-metas 'title s))
-                  (ul ,@(map make-li (filter is-child-post? (children 'posts.html))))
+                  (ul ,@(map make-li (filter is-child-page? (children 'all.html))))
         )
     )
 
+    ◊(->html (list-posts-of-type "types/blog.html"))
+    ◊(->html (list-posts-of-type "types/projects.html"))
+    ◊(->html (list-posts-of-type "types/writing.html"))
+
+
     ◊;    For every child of series.html in the pagetree, we list that page’s
-    ◊; title and summary, then we list all the children of posts.html that
+    ◊; title and summary, then we list all the children of all.html that
     ◊; specify that series in their meta definitions.
 
-    ◊; ◊(->html (list-posts-of-type 'series/notebook.html #:author #f))
-    
-    ◊(->html (list-posts-of-type "types/blog.html"))
+    ◊; ◊(->html (list-posts-of-type 'series/notebook.html #:author #f))\
 
         ◊; <section>
         ◊;     <h2>Flatland: A Romance of Many Dimensions</h2>
