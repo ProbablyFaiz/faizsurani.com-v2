@@ -27,6 +27,9 @@
             ◊when/splice[(select-from-metas 'pdf-url metas)]{
                 &middot; <a href="◊|path-prefix|◊|(hash-ref metas 'pdf-url)|">Download PDF</a>
             }
+            ◊when/splice[(select-from-metas 'github-url metas)]{
+                &middot; <a href="◊|(hash-ref metas 'github-url)|">View on GitHub</a>
+            }
         </h3>
     }
     <nav><ul>
