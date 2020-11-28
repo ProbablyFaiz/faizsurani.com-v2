@@ -12,6 +12,8 @@ index.html
     series/policy.html
 }
 ◊types.html{
-    types/blog.html
+    blog.html
+    projects.html
+    writing.html
 }
 about.html

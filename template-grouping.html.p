@@ -35,24 +35,42 @@
         ◊when/splice[(and (next here) (member (next here) (siblings here)))]{
             <li><a href="◊|path-prefix|◊|(next here)|">Next &rarr;</a></li>
         }
-        ◊when/splice[(pdfable? source-file)]{
-            <li><a href="◊(or (select-from-metas 'pdf-url metas) ◊pdfname[source-file])">
-                  <img src="◊|path-prefix|css/pdficon.png" width="15" height="15" alt="Download PDF" />
-                  <span class="caps" style="font-style: normal">PDF</span></a></li>
-        }
-    ◊;    ◊when/splice[(string-contains path-prefix "/")]{
-    ◊;        <li style="width: auto;">
-    ◊;          <a href="◊|pollen-source-listing|" title="View the Pollen source for this file"
-    ◊;             class=" sourcelink code">&loz; Pollen Source</a></li>
-    ◊;    }
     </ul></nav>
-
+     ◊when/splice[(select-from-metas 'summary metas)]{
+        <p style="margin-bottom:0;">◊(hash-ref metas 'summary)</p>
+    }
 	◊(map ->html (select-from-doc 'body here))
+
+    ◊(define (list-group-posts group-name group-kind)
+        (define (make-li post)
+            `(li (a [[href ,(symbol->string post)]] (span [[class "smallcaps"]] ,(select-from-metas 'title post)))
+                ,(if (select-from-metas 'doc-publish-date post)
+                    (string-append " - " (pubdate->abbr-english (select-from-metas 'doc-publish-date post)))
+                    ""
+                 )
+                ,(if (select-from-metas 'pdf-url post)
+                    `(span [[class "smallcaps"]] "  (" (a [[href ,(select-from-metas 'pdf-url post)]] "PDF") ")")
+                    ""
+                 )
+                 (p [[style "width: 100%;"]]
+                    ,(select-from-metas 'summary post)
+                 )
+             )
+        )
+
+        (define (is-child-page? post group-name group-kind)
+            (equal? (symbol->string group-name) (select-from-metas group-kind post))
+        )
+
+       `(section
+            (ul ,@(map make-li (filter (lambda (post) (is-child-page? post group-name group-kind)) (children 'all.html))))
+        )
+    )
+
+    ◊(->html (list-group-posts here (select-from-metas 'group-kind metas)))
 </article>
-◊when/splice[(equal? "Faiz Surani" (select-from-metas 'author here))]{
     <footer><hr>
-    <p>My name is Faiz Surani. I’m currently a Computing major in the College of Creative Studies at UC Santa Barbara. You can find me on <a href="https://github.com/ProbablyFaiz">GitHub</a>, <a href="https://www.linkedin.com/in/faiz-s-74a510126/">LinkedIn</a>, or <a href="mailto:faiz.surani@gmail.com">by email</a>.</p>
+    <p>I'm Faiz. I’m currently a Computing major in the College of Creative Studies at UC Santa Barbara. You can find me on <a href="https://github.com/ProbablyFaiz">GitHub</a>, <a href="https://www.linkedin.com/in/faiz-s-74a510126/">LinkedIn</a>, or <a href="mailto:faiz.surani@gmail.com">by email</a>.</p>
     </footer>
-}
 </body>
 </html>

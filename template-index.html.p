@@ -54,7 +54,7 @@
         (define (make-li post)
             `(li (a [[href ,(symbol->string post)]] (span [[class "smallcaps"]] ,(select-from-metas 'title post)))
                 ,(if (select-from-metas 'doc-publish-date post)
-                    (string-append " - " (pubdate->abbr-english (select-from-metas 'doc-publish-date post)))
+                    (span " - " (pubdate->abbr-english (select-from-metas 'doc-publish-date post)))
                     ""
                  )
                 ,(if (select-from-metas 'pdf-url post)
@@ -65,7 +65,7 @@
         )
 
         (define (is-child-page? p)
-            (equal? s (select-from-metas 'post-type p))
+            (equal? (symbol->string s) (select-from-metas 'post-type p))
         )
 
         `(section (h2 , (select-from-metas 'title s))
@@ -73,34 +73,7 @@
         )
     )
 
-    ◊(->html (list-posts-of-type "types/blog.html"))
-    ◊(->html (list-posts-of-type "types/projects.html"))
-    ◊(->html (list-posts-of-type "types/writing.html"))
-
-
-    ◊;    For every child of series.html in the pagetree, we list that page’s
-    ◊; title and summary, then we list all the children of all.html that
-    ◊; specify that series in their meta definitions.
-
-    ◊; ◊(->html (list-posts-of-type 'series/notebook.html #:author #f))\
-
-        ◊; <section>
-        ◊;     <h2>Flatland: A Romance of Many Dimensions</h2>
-
-        ◊;     <p><label for="margin-bookcover" class="margin-toggle">&#8853;</label>
-        ◊;         <input type="checkbox" id="margin-bookcover" class="margin-toggle" />
-        ◊;         <span class="marginnote"><img src="flatland/img/flatland-cover.png" /></span></p>
-
-        ◊;     ◊(define (chapter-li chapter)
-        ◊;              (->html `(li (span [[class "smallcaps"]]
-        ◊;                              (a [[href ,(symbol->string chapter)]]
-        ◊;                                 ,(select-from-metas 'title chapter))))))
-
-        ◊;     <h3>Part I: This World</h3>
-        ◊;     <ol>
-        ◊;         ◊(map chapter-li (children 'flatland/part-1.html))
-        ◊;     </ol>
-        ◊; </section>
+    ◊(->html (map list-posts-of-type (children 'types.html)))
     </article>
 </body>
 </html>

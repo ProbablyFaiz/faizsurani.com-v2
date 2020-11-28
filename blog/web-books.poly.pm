@@ -4,7 +4,7 @@
 ◊(define-meta doc-publish-date "2016-02-20")
 ◊(define-meta author           "Joel Dueck")
 ◊(define-meta series           "series/poems.html")
-◊(define-meta post-type        "types/blog.html")
+◊(define-meta post-type        "blog.html")
 ◊(define-meta summary "Web pages are ghosts: they’re like images projected onto a wall. They aren’t durable. Contrast this with hard-copies—things written on paper or printed in books. We can still read books and pamphlets printed five hundred years ago, even though the presses that made them have long since been destroyed. How can we give the average independent web writer that kind of permanence?")
 
 Web pages are ghosts: they’re like images projected onto a wall. They aren’t durable. If you turn off the projector (i.e. web server), the picture disappears. If you know how to run a projector, and you can keep it running ◊emph{all the time}, you can have a web site.

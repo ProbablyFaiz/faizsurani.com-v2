@@ -25,7 +25,7 @@
             ◊(hash-ref metas 'author)
             &middot; ◊(pubdate->abbr-english (hash-ref metas 'doc-publish-date))
             ◊when/splice[(select-from-metas 'pdf-url metas)]{
-                &middot; <a href="◊|(hash-ref metas 'pdf-url)|">Download PDF</a>
+                &middot; <a href="◊|path-prefix|◊|(hash-ref metas 'pdf-url)|">Download PDF</a>
             }
         </h3>
     }
@@ -40,7 +40,7 @@
             <li><a href="◊|path-prefix|◊|(next here)|">Next &rarr;</a></li>
         }
         ◊when/splice[(or (select-from-metas 'pdf-url metas) (pdfable? source-file))]{
-            <li><a href="◊(or (select-from-metas 'pdf-url metas) ◊pdfname[source-file])">
+            <li><a href="◊|path-prefix|◊(or (select-from-metas 'pdf-url metas) ◊pdfname[source-file])">
                   <img src="◊|path-prefix|css/pdficon.png" width="15" height="15" alt="Download PDF" />
                   <span class="caps" style="font-style: normal">PDF</span></a></li>
         }
