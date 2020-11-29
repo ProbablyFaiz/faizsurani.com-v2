@@ -1,23 +1,10 @@
-# License
+The below license applies to source files to the extent that they have not been modified by myself, Faiz Surani.
 
-The files under this repository are owned by myself (Joel Dueck) and are not licensed for reuse, except as noted below:
+# License
 
 * The *source code* — comprised of `pollen.rkt` and `makefile`, plus all `.pp`, `.p`, and `.css` files not elsewhere mentioned in this license file — is licensed under the MIT license (see below). This allows you to reuse this code in your own projects in any way you like as long as you A) provide attribution to me and B) don’t hold me liable for anything.
 
-* The text of any *prose* which lists myself (Joel Dueck) as the author, as well as the actual HTML and PDF output files containing this prose, and any images listing myself as the creator, are provided under a Creative Commons license, specifically [CC-By-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/) (a copy of this license is included below). This allows you to redistribute and adapt my writing for any purpose (even commercially!) as long as you A) provide attribution, B) indicate if changes were made, and C) license your derivative work under the same CC-By-SA license.
-
-* The text and illustrations of the book *Flatland: A Romance of Many Dimensions* are really old, so they are under public domain. My adaptation and production of this book (including `flatland-book.pdf.pp` and `flatland-book.ltx.pp`) are also released to the public domain as described below.
-
-* Included poems are owned by their respective authors.
-
 * The CSS styles in `tufte.css` come from the [Tufte CSS project](https://github.com/edwardtufte/tufte-css), where as of January 2016 they are provided under the MIT license.
-
-## Public Domain Mark 1.0
-
-The text and illustrations of the book *Flatland: A Romance of Many Dimensions* have been identified as being free of known restrictions under copyright law, including all related and neighboring rights. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
-
-The design and PDF data comprising this edition, which are owing almost wholly to the work of the Tufte-LATEX project’s contributors, are also released to the public domain under the terms of the CC0 Universal Public Domain Dedication (see <http://creativecommons.org/publicdomain/zero/1.0/legalcode>). To the extent possible under law, Joel Dueck has waived all copyright and related or neighboring rights to this production of Edwin Abbot’s Flatland: A Romance of Many Dimensions.
-
 
 ## The MIT License (MIT)
 
