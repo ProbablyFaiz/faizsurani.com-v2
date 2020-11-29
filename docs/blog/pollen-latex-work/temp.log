@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.11.27)  28 NOV 2020 18:12
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.11.27)  28 NOV 2020 19:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -958,27 +958,27 @@ Package bibentry Warning: You have used \nobibliography*
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
 
 LaTeX Warning: Marginpar on page 3 moved.
 
 [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
  (/home/faiz/src/personal/faizsurani.com-v2/blog/pollen-latex-work/temp.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 123.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 123.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 116.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
 Package rerunfilecheck Info: File `temp.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 123.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
  ) 
 Here is how much of TeX's memory you used:
- 15748 strings out of 479819
- 288046 string characters out of 5895845
- 805113 words of memory out of 5000000
- 32557 multiletter control sequences out of 15000+600000
+ 15749 strings out of 479819
+ 288051 string characters out of 5895845
+ 805095 words of memory out of 5000000
+ 32558 multiletter control sequences out of 15000+600000
  535978 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 62i,11n,116p,769b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,11n,116p,766b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /home/faiz/src/personal/faizsurani.com-v2/blog/pollen-latex-w
 ork/temp.pdf (3 pages).
