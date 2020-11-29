@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title            "A Green Marshall Plan")
-◊(define-meta doc-publish-date "2019-12-13")
+◊; ◊(define-meta doc-publish-date "2019-12-13")
 ◊(define-meta author           "Faiz Surani et. al")
 ◊(define-meta summary          "An international framework to fight climate change.")
 ◊(define-meta series           "series/policy.html")

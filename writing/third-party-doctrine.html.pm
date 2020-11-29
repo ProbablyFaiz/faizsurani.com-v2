@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title            "Overturn the Third-Party Doctrine")
-◊(define-meta doc-publish-date "2020-11-24")
+◊; ◊(define-meta doc-publish-date "2020-11-24")
 ◊(define-meta author           "Faiz Surani")
 ◊(define-meta summary          "It's time for the Supreme Court to take internet privacy seriously.")
 ◊(define-meta series           "series/law.html")
