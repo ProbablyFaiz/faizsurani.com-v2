@@ -31,9 +31,9 @@
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
 \graphicspath{{graphics/}}
 
-\title{The Unbearable Lightness of Web Pages}
-\author{Joel Dueck}
-\date{Saturday, February 20th, 2016}  % if the \date{} command is left out, the current date will be used
+\title{DrDocx ships its first alpha release!}
+\author{Faiz Surani}
+\date{Sunday, July 5th, 2020}  % if the \date{} command is left out, the current date will be used
 
 % The following package makes prettier tables.  We're all about the bling!
 \usepackage{booktabs}
@@ -79,46 +79,45 @@
 
 \maketitle% this prints the handout title, author, and date
 
-Web pages are ghosts: they’re like images projected onto a wall. They aren’t durable. If you turn off the projector (i.e. web server), the picture disappears. If you know how to run a projector, and you can keep it running \emph{all the time}, you can have a web site.
+\emph{Author’s Note: This post was originally published on \href{https://drdocx.com/blog/0.1.3-alpha-released}{the DrDocx blog}. It is reproduced here in its entirety.}
 
-But as soon as there’s no one to babysit the projector, it eventually gets turned off, and everything you made with it goes away. If the outage is permanent, the disappearance is too. This is happening all the time, as servers fail, or companies are acquired and shut down.\footnote{“When Yahoo! switched off the servers for GeoCities, the Web posting service, on Oct. 27, some 7 million of the Internet’s first websites went dark forever.” Time Magazine, 9 Nov 2009 (\url{http://content.time.com/time/business/article/0,8599,1936645,00.html})}
+Yesterday, DrDocx officially shipped to outside users for the first time with our \href{https://github.com/DrDocx/DrDocx-Desktop/releases/tag/0.1.3-alpha}{0.1.3-alpha} release. We have a lot of work yet to do, but we’re proud to have reached this milestone and put our work in the hands of our partners. It’s been a long and winding road to this point, so I thought I’d write about how we got here, and the lessons we learned.
 
-I think about this a lot. And I’m not even thinking about the fate of the Entire Internet. Just the small sites I care about, the blogs and small publications. It’s sad to think that when their authors are gone, all their writing will eventually disappear. (And don’t tell me about the Internet Archive—that’s just another backup projector, run by volunteers. We have no assurance that it’ll still be running a year or ten years from now.) Then, too, I also think about my own web sites. Babysitting that projector can be a lot of work sometimes. If it’s all going to go up in smoke as soon as I’m unable to work on it anymore, then publishing on the web seems, really, quite futile.
+\begin{enumerate}\item Test 1
+\item Test 2\end{enumerate}
 
-The obvious contrast is with hard-copies: things written on paper or printed in books. We can still read books and pamphlets printed five hundred years ago, even though the presses that made them have long since been destroyed.
 
-How can we give the average independent web writer that kind of permanence?
+1. {\bfseries There’s no such thing as cross-platform.}
+   Okay, that might be a bit of an exaggeration, but not by much. From the very beginning, our goal was to build a fully cross-platform app, because we wanted to make DrDocx as widely available as possible but didn’t have the resources or the motivation to maintain two separate apps. (We couldn’t build a plain old web app because of medical privacy reasons.) That’s alright though, we’re living in the era of cross-platform! .NET Core, React Native, Xamarin, and so on are all here to help. Right? Right?!
 
-\begin{figure}\includegraphics{img/post-artifact-full-large.png}\caption{From Post-Artifact Books and Publishing (\url{http://craigmod.com/journal/post_artifact/}) by Craig Mod (\smallcaps{CC} License)}\end{figure}
+   Not exactly. During SB Hacks, we decided on building an ASP.NET Core app, because everyone on the team had written either C\# or Java (which is very syntactically similar), and, being built by Microsoft, it had APIs for interacting with Word documents. In short, it would allow us to build something quickly and figure out the exact details of desktop deployment later.
 
-When Craig Mod drew this diagram, he was thinking about this issue the other way around. He was focused on traditional print publishing, and how the web would change that process. We started with print books, he said, and by \emph{adding digital publishing} we can create this much fuller realm of author-reader interaction. It’s a brilliant and well-considered \href{http://craigmod.com/journal/post_artifact/}{piece}. It has this flip-side, though, which we web publishers don’t often talk about: \textbf{books can be improved by the web, but the web can also be improved by books.} Digital publishing could use more “Immutable Artifacts”, because \textbf{artifacts are durable}.
+   The situation may well be better for mobile app development, but we ultimately discovered (over a not-negligible span of time) that there is really only two truly production-ready cross-platform desktop frameworks: \href{https://www.electronjs.org/}{Electron} and \href{https://www.qt.io/}{Qt}.
 
-Of course there’s a reason why, in all our discussion about CMSs, about design, markup, semantics, and programming, we almost never include books. The \emph{tools} we use don’t even consider book publication, much less integrate it. But they could. And that’s what this website, \href{../index.html}{\emph{Secretary of Foreign Relations}}, is really about.
-
-\newthought{This site} is basically a rough, first-effort experiment in creating a mini-publication that realizes both sides of Craig’s diagram above. It exists simultaneously as a web site \emph{and} as a printed, bound book—a book that \href{https://www.amazon.com/dp/152396216X}{you can order right now} and have delivered to your door.\footnote{This being a basic proof-of-concept, the book’s cover is extremely generic, and the price is set as low as Amazon KDP will allow me to go (\$5.38 in this case). At this point, only the content in the \emph{Flatland} portion of the site is included in the print edition.}
-
-\begin{figure}\includegraphics{img/flatland-pageflipping-t-x.png}\caption{}\end{figure}
-
-What do I mean by “exists simultaneously”? I mean that the production of the printed book is, for the most part, not some separate workflow from the production of the web site. I’m not copying text from the web site and pasting it into InDesign, for example. When I enter the command to generate the HTML files that make up this site, the complete PDF file for the book is generated at the same time, from the same source and by the same software.\footnote{See more details on the Colophon (\url{../colophon.html}) page and on the project’s Github repository (\url{https://github.com/otherjoel/try-pollen}).} I can upload this PDF file to Amazon KDP, who will print a copy for anyone who cares to order it.
-
-Why a book? Of course anyone can load a web page in their browser and send it to their inkjet printer. But, seriously: no one does that, even for websites they feel quite attached to. Even if they did, and even if the printout looked really nice (very much not the norm for web pages), who wants to save a sheaf of loose papers? A book is the best kind of printed artifact, and with print-on-demand services you can have them made with reasonable quality at a very low cost.
-
-\newthought{So here’s} how this will play out. After I reimplement my other web sites using this system, I’ll be making book editions of those sites available for free to anyone who cares to request a copy\footnote{This was what I had in mind originally with my \emph{Annual Yarn} project (\url{https://thelocalyarn.com/article/the-annual-yarn-2011}), which I hope to resume.}. This is a win for both sides. The reader gets a permanent, well-designed copy of something they have enjoyed. And \emph{I} get the satisfaction of knowing those books are out there, being held in various places by people who (at least somewhat) care about them. The point is not to make money selling books, but to sow the writing as far as it can go—even knowing it has very narrow appeal and no market value. It’s a way to write purely for the joy of it, and still know that the work will easily outlive me. My writing will not depend for its continuance on someone maintaining backups and complicated hosting arrangements.
-
-So much for my own stuff. But my larger, longer-shot hope is that others will start thinking about doing this too: \emph{building} and \emph{making use of} tools that integrate print publishing with web publishing. This goes back to the concern I talked about earlier. I don’t want the writing on small, independent sites to disappear. Not only do I want it not to disappear, there’s a good deal of it that I would like to have on my bookshelf. Some of those authors and those sites are gone already.\footnote{“I don’t know Mark Pilgrim personally. I only know his work and it’s excellent. […] Mark is alive, but online he’s gone. He committed ‘infosuicide’ last week. All of his websites are Gone. That’s capital G, Gone.”—Scott Hanselman on the disppearance of Mark Pilgrim in October 2011 (\url{http://www.hanselman.com/blog/410GoneThoughtsOnMarkDiveintomarkPilgrimsAndWhysInfosuicides.aspx}).} More are leaving all the time.
-
-Whatever blogging tools or CMSs we use to publish on the web, we ought to start finding ways to have them generate well-designed books as well as web pages. The services and technology we need are already sitting there, ready to print those books for us. Supposing we were able to adopt this kind of approach, it’s easy to suppose we could develop a culture of sharing our books with each other. Our writing would be durable again. That would be a lovely thing.
-
-\marginnote{\emph{Sonnet} by John Keats}
+   Electron, for the unfamiliar, is essentially a Chromium instance running a web app taped to some native desktop APIs. For some true believers in native code, the very concept inspires horror and symbolizes the decadence of a civilization in decline. While we weren’t a fan of its bloat and resource consumption, it offered us inexperienced and heavily time-constrained developers something irresistible: access to a massive ecosystem of open-source UI libraries.
 
 
 
-\settowidth{\versewidth}{\vin Hold like rich garners the full ripen’d grain…}
-\begin{verse}[\versewidth]{\itshape When I have fears that I may cease to be \\
-\vin Before my pen has glean’d my teeming brain, \\
-Before high-piléd books, in charact’ry, \\
-\vin Hold like rich garners the full ripen’d grain…}\end{verse}
+2. {\bfseries OpenXML is an abomination.}
+   OpenXML is the standard format of the flagship Microsoft Office products (Excel, PowerPoint, Word, etc.). It is also the source of a great deal of misery and despair. One central feature of DrDocx is the ability to fill text into a predefined Word document to generate reports from templates; essentially, find and replace. One would think this would be as trivial a problem as one could conceive. We certainly did.
+
+   The reality is a little more complicated. Without delving too deep into the technical details of the OpenXML file format, there’s a lot of quirks to its internal structure, resulting in a pretty high baseline of complexity of interaction. Our first instinct was to grab an off-the-shelf library for basic Word document operations. Vexingly, the cult of open source didn’t seem to have reached the Word document-adjacent tech industry, and the only things we could find were closed source libraries with four-figure price tags. Being both morally offended and (perhaps more operatively) broke, we decided to stick with the low-level OpenXML SDK and implement all the functionality ourselves.
+
+   This, as alluded to, turned out to be pretty tricky. The most frustrating thing we found was the sheer amount of \emph{wrong} solutions to our find-and-replace problem on everywhere from StackOverflow to, somewhat outrageously, Microsoft’s official OpenXML documentation. Given this, we owe a huge debt of gratitude to Eric White, \href{http://www.ericwhite.com/blog/}{whose blog} was an invaluable source of information and implementation suggestions as we struggled through the trials and tribulations of OpenXML.
+
+   In the coming months, we plan to refactor our various Word interaction APIs to be less tightly coupled to the rest of our codebase and release it as an open-source .NET Core SDK for all to use completely free of charge and contribute to. If even one other person saves all the time we spent, it’ll have been a worthy contribution to the developer community.
 
 
 
+3. {\bfseries Working titles stick.}
+   DrDocx is a name we’ve certainly come to love, but it didn’t start that way. DrDocx was born of a 5-minute brainstorming session right before the hackathon started, because we needed \emph{something} to name our source code repositories. We were building a tool for doctors that generated Word documents, so Doctor + .docx = DrDocx. As it turns out, though, once you have a name plastered over anything and everything associated with the project, you both lose both the ability and desire to easily change it.
+
+
+
+4. {\bfseries You probably won’t make the right design decision the first time.}
+   One of the reasons that agile development has caught on as much as it has is the increasing recognition that users use your product in ways that you can’t really hope to foresee. It’s all well and good to hear someone say this or read about it, but we found it extraordinarily valuable to make the waterfall-type mistakes on our own.
+
+   We spent countless hours agonizing over different design decisions, whether they be over database structure or user experience. It is important, to be clear, to give these things forethought and get them reasonably right upfront, but we discovered you can only be so imaginative putting yourself in the shoes of a user. It’s better to give something imperfect to your users and iterate from there than it is to give them a perfect product for a use case that doesn’t actually exist.
+
+We hope what we’ve learned and done can be of use to others. If you have any questions, comments, or concerns, we’d love to hear from you at \href{mailto:drdocx.dev@gmail.com}{drdocx.dev@gmail.com}.
 \end{document}
