@@ -16,7 +16,7 @@
 	<h1>◊(hash-ref metas 'title)</h1>
     <h2>◊(hash-ref metas 'author)</h2>
 
-    ◊; Insert the content from the page (index.html.pm in this case)
+    ◊; Insert the content from the page (index.html.pm in this case).
     ◊(map ->html (select-from-doc 'body here))
 
     <p>
@@ -46,34 +46,18 @@
         )
     )
 
-    <p>
+    <p style="margin-bottom: 1rem; padding-top: 1rem;">
         Find by category: ◊(->html (list-groupings 'series.html))
     </p>
 
-    ◊(define (list-posts-of-type s)
-        (define (make-li post)
-            `(li (a [[href ,(symbol->string post)]] (span [[class "smallcaps"]] ,(select-from-metas 'title post)))
-                ,(if (select-from-metas 'doc-publish-date post)
-                    (span " - " (pubdate->abbr-english (select-from-metas 'doc-publish-date post)))
-                    ""
-                 )
-                ,(if (select-from-metas 'pdf-url post)
-                    `(span [[class "smallcaps"]] "  (" (a [[href ,(select-from-metas 'pdf-url post)]] "PDF") ")")
-                    ""
-                 )
-             )
-        )
-
-        (define (is-child-page? p)
-            (equal? (symbol->string s) (select-from-metas 'post-type p))
-        )
-
-        `(section (h2 , (select-from-metas 'title s))
-                  (ul ,@(map make-li (filter is-child-page? (children 'all.html))))
-        )
+    ◊(define (list-type-posts type) 
+        `(div
+            (h2 (a [[href ,(symbol->string type)]] ,(select-from-metas 'title type)))
+            ,(list-group-posts (children 'all.html) type 'post-type #f "")
+         )
     )
-
-    ◊(->html (map list-posts-of-type (children 'types.html)))
+ 
+    ◊(->html (map list-type-posts (children 'types.html)))
     </article>
 </body>
 </html>

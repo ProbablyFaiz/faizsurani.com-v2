@@ -5,4 +5,4 @@
 ◊(define-meta summary "A series of increasingly incoherent observations with no thematic connection whatosever.")
 ◊(define-meta group-kind "post-type")
 
-◊p{A series of increasingly incoherent observations with no thematic connection whatosever.}
+◊span{}

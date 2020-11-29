@@ -41,33 +41,7 @@
     }
 	◊(map ->html (select-from-doc 'body here))
 
-    ◊(define (list-group-posts group-name group-kind)
-        (define (make-li post)
-            `(li (a [[href ,(symbol->string post)]] (span [[class "smallcaps"]] ,(select-from-metas 'title post)))
-                ,(if (select-from-metas 'doc-publish-date post)
-                    (string-append " - " (pubdate->abbr-english (select-from-metas 'doc-publish-date post)))
-                    ""
-                 )
-                ,(if (select-from-metas 'pdf-url post)
-                    `(span [[class "smallcaps"]] "  (" (a [[href ,(select-from-metas 'pdf-url post)]] "PDF") ")")
-                    ""
-                 )
-                 (p [[style "width: 100%;"]]
-                    ,(select-from-metas 'summary post)
-                 )
-             )
-        )
-
-        (define (is-child-page? post group-name group-kind)
-            (equal? (symbol->string group-name) (select-from-metas group-kind post))
-        )
-
-       `(section
-            (ul ,@(map make-li (filter (lambda (post) (is-child-page? post group-name group-kind)) (children 'all.html))))
-        )
-    )
-
-    ◊(->html (list-group-posts here (select-from-metas 'group-kind metas)))
+    ◊(->html (list-group-posts (children 'all.html) here (select-from-metas 'group-kind metas) #t path-prefix))
 </article>
     <footer><hr>
     <p>I'm Faiz. I’m currently a Computing major in the College of Creative Studies at UC Santa Barbara. You can find me on <a href="https://github.com/ProbablyFaiz">GitHub</a>, <a href="https://www.linkedin.com/in/faiz-s-74a510126/">LinkedIn</a>, or <a href="mailto:faiz.surani@gmail.com">by email</a>.</p>

@@ -5,4 +5,4 @@
 ◊(define-meta summary "A selection of my writing on various subjects over the past several years.")
 ◊(define-meta group-kind "post-type")
 
-◊p{A selection of my writing on various subjects over the past several years.}
+◊span{}

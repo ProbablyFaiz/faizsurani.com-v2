@@ -20,15 +20,20 @@
 </head>
 <body><article>
     <h1>◊(hash-ref metas 'title)</h1>
-    ◊when/splice[(and (select-from-metas 'author metas) (select-from-metas 'doc-publish-date metas))]{
+    ◊when/splice[(or (select-from-metas 'author metas) (select-from-metas 'doc-publish-date metas))]{
         <h3>
             ◊(hash-ref metas 'author)
-            &middot; ◊(pubdate->abbr-english (hash-ref metas 'doc-publish-date))
+            ◊when/splice[(select-from-metas 'doc-publish-date metas)]{
+                &middot; ◊(pubdate->abbr-english (hash-ref metas 'doc-publish-date))
+            }
             ◊when/splice[(select-from-metas 'pdf-url metas)]{
                 &middot; <a href="◊|path-prefix|◊|(hash-ref metas 'pdf-url)|">Download PDF</a>
             }
+            ◊when/splice[(select-from-metas 'website-url metas)]{
+                &middot; <a href="◊|(hash-ref metas 'website-url)|">Website</a>
+            }
             ◊when/splice[(select-from-metas 'github-url metas)]{
-                &middot; <a href="◊|(hash-ref metas 'github-url)|">View on GitHub</a>
+                &middot; <a href="◊|(hash-ref metas 'github-url)|">GitHub</a>
             }
         </h3>
     }

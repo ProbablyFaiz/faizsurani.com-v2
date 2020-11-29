@@ -5,9 +5,13 @@ index.html
     writing/third-party-doctrine.html
     writing/independent-legislature-doctrine.html
     writing/green-marshall-plan.html
+    projects/drdocx.html
+    projects/evacuation-routes.html
     blog/deplatforming.html
 }
 ◊series.html{
+    series/software.html
+    series/data-science.html
     series/law.html
     series/policy.html
 }

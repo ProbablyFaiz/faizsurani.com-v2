@@ -442,3 +442,36 @@ Index functionality: allows creation of a book-style keyword index.
 (define (pubdate->abbr-english datetime)
   (~t (iso8601->date datetime) "MMM. dd, YYYY")
 )
+
+(define (create-url path-prefix relative-url)
+  (string-append path-prefix relative-url)
+)
+
+(define (list-group-posts post-list group-name group-kind include-summary path-prefix)
+    (define (make-post-listing post)
+    `(li (a [[href ,(string-append path-prefix (symbol->string post))]] (span [[class "smallcaps"]] ,(select-from-metas 'title post)))
+        ,(if (select-from-metas 'doc-publish-date post)
+            (string-append " - " (pubdate->abbr-english (select-from-metas 'doc-publish-date post)))
+            ""
+          )
+        ,(if (select-from-metas 'pdf-url post)
+            `(span [[class "smallcaps"]] "  (" (a [[href ,(string-append path-prefix (select-from-metas 'pdf-url post))]] "PDF") ")")
+            ""
+          )
+        ,(if include-summary
+            `(p [[style "width: 100%;"]]
+              ,(select-from-metas 'summary post)
+            )
+            ""
+          )
+      )
+    )
+
+    (define (is-child-page? post group-name group-kind)
+        (equal? (symbol->string group-name) (select-from-metas group-kind post))
+    )
+
+    `(section
+        (ul [[class "post-list"]] ,@(map make-post-listing (filter (lambda (post) (is-child-page? post group-name group-kind)) post-list)))
+    )
+)

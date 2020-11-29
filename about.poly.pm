@@ -1,7 +1,6 @@
 #lang pollen
 
 ◊(define-meta title            "About Me")
-◊(define-meta doc-publish-date "2020-11-26")
 
 Hi, I'm Faiz (pronounced ◊smallcaps{fez}). I'm currently a Computing major in the ◊hyperlink["https://ccs.ucsb.edu"]{College of Creative Studies} at UC Santa Barbara.
 
