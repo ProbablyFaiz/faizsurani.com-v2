@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.11.27)  27 NOV 2020 19:26
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.11.27)  28 NOV 2020 15:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -737,7 +737,7 @@ Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 ))
-No file temp.aux.
+(/home/faiz/src/personal/faizsurani.com-v2/pollen-latex-work/temp.aux)
 \openout1 = `temp.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
@@ -751,6 +751,7 @@ LaTeX Font Info:    ... okay on input line 78.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 7
 8.
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -846,12 +847,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 78.
 LaTeX Info: Redefining \pageref on input line 78.
 LaTeX Info: Redefining \nameref on input line 78.
+
+(/home/faiz/src/personal/faizsurani.com-v2/pollen-latex-work/temp.out)
+(/home/faiz/src/personal/faizsurani.com-v2/pollen-latex-work/temp.out)
 \@outlinefile=\write4
 \openout4 = `temp.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 78.
@@ -1084,13 +1085,13 @@ Package rerunfilecheck Info: File `temp.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 15759 strings out of 479819
- 288125 string characters out of 5895845
+ 15765 strings out of 479819
+ 288533 string characters out of 5895845
  814813 words of memory out of 5000000
  32574 multiletter control sequences out of 15000+600000
  535970 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 62i,11n,116p,1074b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,11n,116p,1078b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /home/faiz/src/personal/faizsurani.com-v2/pollen-latex-work/t
 emp.pdf (1 page).
