@@ -1,3 +1,21 @@
+Copyright (c) 2020 Faiz Surani
+
+The intent of this license is to allow others to use the code powering the website,
+but not my copyrighted writing or other work that is hosted on the website.
+
+In general, the content of this website is not open-source.
+That means, content files including: *.pm files,
+all output files (files with HTML and PDF extensions), 
+and other non-CSS static files (like files in the assets/ directory and any images)
+are copyrighted content and are NOT licensed for any purpose.
+
+HOWEVER, some other kinds of code are licensed under the below MIT license.
+This includes: *.p and *.pp files (template files), *.css files, *.rkt files, *.def files,
+*.py files, *.lua files, and .git* files to the extent that any of these are not created by others
+and licensed under their licenses. 
+With that said, all code used from others in this project is also licensed
+from them under the MIT license. See TEMPLATE-LICENSE.md for more info.
+
 MIT License
 
 Copyright (c) 2020 Faiz Surani
