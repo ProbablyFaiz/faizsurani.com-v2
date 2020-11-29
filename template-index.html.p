@@ -29,7 +29,7 @@
 
     ◊(define (list-groupings group-type)
         (define (make-grouping-link group add-delimiter)
-            `(span [[class "smallcaps"]] 
+            `(span 
                 (a [[href ,(symbol->string group)]] ,(select-from-metas 'title group))
                 ,(if add-delimiter
                     `(span " " middot " ")
@@ -48,7 +48,7 @@
         )
     )
 
-    <p style="margin-bottom: 1rem; padding-top: 1rem;">
+    <p class="smallcaps" style="margin-bottom: 1rem; padding-top: 1rem;">
         Find by category: ◊(->html (list-groupings 'series.html))
     </p>
 

@@ -449,7 +449,7 @@ Index functionality: allows creation of a book-style keyword index.
 
 (define (list-group-posts post-list group-name group-kind include-summary path-prefix)
     (define (make-post-listing post)
-    `(li (a [[href ,(string-append path-prefix (symbol->string post))]] (span [[class "smallcaps"]] ,(select-from-metas 'title post)))
+    `(li (a [[href ,(string-append path-prefix (symbol->string post))]] (span ,(select-from-metas 'title post)))
         ,(if (select-from-metas 'doc-publish-date post)
             (string-append " - " (pubdate->abbr-english (select-from-metas 'doc-publish-date post)))
             ""
