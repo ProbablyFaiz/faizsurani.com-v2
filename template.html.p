@@ -48,7 +48,11 @@
             <li><a href="◊|path-prefix|◊|(next here)|">Next &rarr;</a></li>
         }
         ◊when/splice[(or (select-from-metas 'pdf-url metas) (pdfable? source-file))]{
-            <li><a href="◊|path-prefix|◊(or (select-from-metas 'pdf-url metas) ◊pdfname[source-file])">
+            <li><a href="◊(if (select-from-metas 'pdf-url metas)
+                            (string-append path-prefix (select-from-metas 'pdf-url metas))
+                            ◊pdfname[source-file]
+                          )
+                ">
                   <img src="◊|path-prefix|css/pdficon.png" width="15" height="15" alt="Download PDF" />
                   <span class="caps" style="font-style: normal">PDF</span></a></li>
         }

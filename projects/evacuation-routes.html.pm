@@ -1,6 +1,6 @@
 #lang pollen
 
-◊(define-meta title            "Oprimal Evacuation Routes")
+◊(define-meta title            "Optimal Evacuation Routes")
 ◊(define-meta author           "Faiz Surani")
 ◊(define-meta summary          "A Vehicle Routing Problem simulation using OpenStreetMaps data to find optimal evacuation routes for Glacier National Park in case of emergency.")
 ◊(define-meta series           "series/data-science.html")
