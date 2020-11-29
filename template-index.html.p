@@ -56,7 +56,7 @@
             ,(list-group-posts (children 'all.html) type 'post-type #f "")
          )
     )
- 
+
     ◊(->html (map list-type-posts (children 'types.html)))
     </article>
 </body>

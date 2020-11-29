@@ -37,7 +37,10 @@
 
     \title{◊(hash-ref metas 'title)}
     \author{◊(print-if (select-from-metas 'author metas) "~a")}
-    \date{◊(pubdate->english (hash-ref metas 'doc-publish-date))}  % if the \date{} command is left out, the current date will be used
+    \date{◊(if (select-from-metas 'doc-publish-date metas) 
+                (pubdate->abbr-english (select-from-metas 'doc-publish-date metas))
+                ""
+        )}  % if the \date{} command is left out, the current date will be used
 
     % The following package makes prettier tables.  We're all about the bling!
     \usepackage{booktabs}

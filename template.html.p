@@ -17,6 +17,13 @@
   <style type="text/css">
    img { mix-blend-mode: multiply; }
   </style>
+◊;   This is a hack because I can't use HTML tags on the DrDocx blog post's poly source file.
+◊;   Figure out a better way later.
+  <style>
+    ol { 
+        width: inherit;
+    }
+  </style>
 </head>
 <body><article>
     <h1>◊(hash-ref metas 'title)</h1>
