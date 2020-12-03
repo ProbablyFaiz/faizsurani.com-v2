@@ -23,7 +23,7 @@
         <a href="about.html">About Me</a> 
         &middot; <a href="resume.pdf">Resume</a> 
         &middot; <a href="https://github.com/ProbablyFaiz">GitHub</a>
-        &middot; <a href="https://www.linkedin.com/in/faiz-s-74a510126/">LinkedIn</a>
+        &middot; <a href="https://www.linkedin.com/in/faiz-surani-74a510126/">LinkedIn</a>
         ◊; &middot; <a href="feed.xml"><span class="caps">RSS</span> Feed</a>
     </p>
 
