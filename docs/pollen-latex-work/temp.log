@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.11.27)  28 NOV 2020 19:03
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.11.27)  13 DEC 2020 15:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -934,50 +934,6 @@ ping=tex-text;"
 LaTeX Warning: Marginpar on page 1 moved.
 
 
-Package fontspec Info: Font family 'ValkyrieT3(2)' created for font 'Valkyrie
-(fontspec)             T3' with options
-(fontspec)             [Ligatures=TeX,Mapping=tex-text,Numbers=OldStyle,SmallCa
-psFont={Valkyrie
-(fontspec)             C3},VerticalPosition=Superior].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Valkyrie
-(fontspec)             T3/OT:script=latn;language=dflt;+onum;+sups;mapping=tex-
-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Valkyrie
-(fontspec)             C3/OT:script=latn;language=dflt;+onum;+sups;mapping=tex-
-text;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Valkyrie
-(fontspec)             T3/B/OT:script=latn;language=dflt;+onum;+sups;mapping=te
-x-text;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->"Valkyrie
-(fontspec)             C3/OT:script=latn;language=dflt;+onum;+sups;mapping=tex-
-text;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Valkyrie
-(fontspec)             T3/I/OT:script=latn;language=dflt;+onum;+sups;mapping=te
-x-text;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->"Valkyrie
-(fontspec)             C3/OT:script=latn;language=dflt;+onum;+sups;mapping=tex-
-text;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Valkyrie
-(fontspec)             T3/BI/OT:script=latn;language=dflt;+onum;+sups;mapping=t
-ex-text;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->"Valkyrie
-(fontspec)             C3/OT:script=latn;language=dflt;+onum;+sups;mapping=tex-
-text;"
-
-
-LaTeX Warning: Marginpar on page 1 moved.
-
-
-LaTeX Warning: Marginpar on page 1 moved.
-
-
 LaTeX Warning: Marginpar on page 1 moved.
 
 
@@ -1085,13 +1041,13 @@ Package rerunfilecheck Info: File `temp.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 15765 strings out of 479819
- 288533 string characters out of 5895845
- 814755 words of memory out of 5000000
- 32574 multiletter control sequences out of 15000+600000
- 535970 words of font info for 65 fonts, out of 8000000 for 9000
+ 15743 strings out of 479819
+ 287681 string characters out of 5895845
+ 815755 words of memory out of 5000000
+ 32554 multiletter control sequences out of 15000+600000
+ 535962 words of font info for 64 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 62i,11n,116p,1078b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,11n,116p,893b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /home/faiz/src/personal/faizsurani.com-v2/pollen-latex-work/t
 emp.pdf (1 page).
