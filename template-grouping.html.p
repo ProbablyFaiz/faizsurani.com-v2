@@ -44,7 +44,7 @@
     ◊(->html (list-group-posts (children 'all.html) here (select-from-metas 'group-kind metas) #t path-prefix))
 </article>
     <footer><hr>
-    <p>I'm Faiz. I’m currently a Computing major in the College of Creative Studies at UC Santa Barbara. You can find me on <a href="https://github.com/ProbablyFaiz">GitHub</a>, <a href="https://www.linkedin.com/in/faiz-s-74a510126/">LinkedIn</a>, or <a href="mailto:faiz@faizsurani.com">by email</a>.</p>
+    <p>I'm Faiz. I’m currently a Computing major in the College of Creative Studies at UC Santa Barbara. You can find me on <a href="https://github.com/ProbablyFaiz">GitHub</a>, <a href="https://www.linkedin.com/in/faiz-surani-74a510126/">LinkedIn</a>, or <a href="mailto:faiz@faizsurani.com">by email</a>.</p>
     </footer>
 </body>
 </html>
