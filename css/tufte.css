@@ -217,7 +217,7 @@ div.fullwidth, table.fullwidth { width: 100%; }
 div.table-wrapper { overflow-x: scroll;
                     font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif; }
 
-@media screen and (max-width: 760px) { p, footer { width: 90%; }
+@media screen and (max-width: 1200px) { p, footer { width: 90%; }
                                        pre.code { width: 87.5%; }
                                        ul { width: 85%; }
                                        figure { max-width: 90%; }
@@ -252,7 +252,7 @@ label.sidenote-number { display: inline; }
 
 label.margin-toggle:not(.sidenote-number) { display: none; }
 
-@media (max-width: 760px) { label.margin-toggle:not(.sidenote-number) { display: inline; }
+@media (max-width: 1200px) { label.margin-toggle:not(.sidenote-number) { display: inline; }
                             .sidenote, .marginnote { display: none; }
                             .margin-toggle:checked + .sidenote,
                             .margin-toggle:checked + .marginnote { display: block;
@@ -279,4 +279,8 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
                                              position: relative; }
                             div.table-wrapper, table, table.booktabs { width: 85%; }
                             div.table-wrapper { border-right: 1px solid #efefef; }
-                            img { width: 100%; } }
+                            img { width: 100%; } 
+                            body { padding-left: 20px; width: 100% - 20px; max-width: 700px; }
+                            p { width: 95%; margin-right: 0; }
+                            ol { padding-left: 10px; padding-right: 0; }
+                          }

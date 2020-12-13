@@ -26,7 +26,7 @@
 
 (define opt-feed-ptree   "index.ptree")
 (define opt-author-name  "Faiz Surani")         ; The name given for the feed's <author>
-(define opt-author-email "faiz.surani@gmail.com")    ; Email for the feed's <author>
+(define opt-author-email "faiz@faizsurani.com")    ; Email for the feed's <author>
 (define opt-feed-title   "Faiz Surani")
 (define opt-feed-site    "https://faizsurani.com/") ; This should end with /
 

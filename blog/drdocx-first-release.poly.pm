@@ -35,7 +35,7 @@ Yesterday, DrDocx officially shipped to outside users for the first time with ou
    
 
 ◊li{◊b{Working titles stick.}
-   DrDocx is a name we've certainly come to love, but it didn't start that way. DrDocx was born of a 5-minute brainstorming session right before the hackathon started, because we needed ◊emph{something} to name our source code repositories. We were building a tool for doctors that generated Word documents, so Doctor + .docx = DrDocx. As it turns out, though, once you have a name plastered over anything and everything associated with the project, you both lose both the ability and desire to easily change it.
+   ◊p{DrDocx is a name we've certainly come to love, but it didn't start that way. DrDocx was born of a 5-minute brainstorming session right before the hackathon started, because we needed ◊emph{something} to name our source code repositories. We were building a tool for doctors that generated Word documents, so Doctor + .docx = DrDocx. As it turns out, though, once you have a name plastered over anything and everything associated with the project, you both lose both the ability and desire to easily change it.}
 }
    
 
@@ -46,4 +46,4 @@ Yesterday, DrDocx officially shipped to outside users for the first time with ou
 }
 }
 
-We hope what we've learned and done can be of use to others. If you have any questions, comments, or concerns, we'd love to hear from you at ◊hyperlink["mailto:drdocx.dev@gmail.com"]{drdocx.dev@gmail.com}.
+We hope what we've learned and done can be of use to others. If you have any questions, comments, or concerns, we'd love to hear from you at ◊hyperlink["mailto:dev@drdocx.com"]{dev@drdocx.com}.

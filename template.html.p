@@ -77,7 +77,7 @@
     ◊; }
 </article>
     <footer><hr>
-    <p>My name is Faiz. I’m currently a Computing major in the College of Creative Studies at UC Santa Barbara. You can find me on <a href="https://github.com/ProbablyFaiz">GitHub</a>, <a href="https://www.linkedin.com/in/faiz-s-74a510126/">LinkedIn</a>, or <a href="mailto:faiz.surani@gmail.com">by email</a>.</p>
+    <p>My name is Faiz. I’m currently a Computing major in the College of Creative Studies at UC Santa Barbara. You can find me on <a href="https://github.com/ProbablyFaiz">GitHub</a>, <a href="https://www.linkedin.com/in/faiz-s-74a510126/">LinkedIn</a>, or <a href="mailto:faiz@faizsurani.com">by email</a>.</p>
     </footer>
 </body>
 </html>
