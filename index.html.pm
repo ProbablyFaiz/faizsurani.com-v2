@@ -6,4 +6,4 @@
 ◊(define-meta title            "Faiz Surani")
 ◊(define-meta author           "Welcome!")
 
-◊p{I'm Faiz. Here you can find some of the stuff I've written and worked on.}
+◊p{I'm Faiz. Here you can find some of the stuff I've written and worked on. }

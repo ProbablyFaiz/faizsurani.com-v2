@@ -1,7 +1,6 @@
 #lang pollen
 
-◊(define-meta title            "Affirmative Action Has Failed Us")
-◊; ◊(define-meta doc-publish-date "2019-12-13")
+◊(define-meta title            "How Affirmative Action Failed Us")
 ◊(define-meta author           "Faiz Surani")
 ◊(define-meta summary          "A deep dive into the failures of affirmative action — and what happens next.")
 ◊(define-meta series           "series/law.html")
