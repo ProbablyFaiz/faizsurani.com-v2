@@ -88,7 +88,7 @@ p.poem-heading {
 a.index-entry { text-decoration: none; border: none; }
 
 .smallcaps {
-    font-family: valkyrie-c4;
+    font-variant: small-caps;
 }
 
 p + p.pause-before,
