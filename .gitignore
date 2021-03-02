@@ -14,4 +14,4 @@ drafts/
 pollen.cache
 .DS_Store
 !resume.pdf
-!project-assets/*.pdf
+!assets/*.pdf
