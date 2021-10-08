@@ -616,30 +616,37 @@ LaTeX Info: Redefining \] on input line 2860.
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 
-Package fontspec Info: Could not resolve font "Valkyrie T3/B" (it probably
-(fontspec)             doesn't exist).
+! Package fontspec Error: The font "Adobe Caslon Pro" cannot be found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.27 \setmonofont
+                 [Mapping=tex-text,Scale=MatchLowercase]{Triplicate T4c}
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.27 \setmonofont
+                 [Mapping=tex-text,Scale=MatchLowercase]{Triplicate T4c}
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
 
 
-Package fontspec Info: Font family 'ValkyrieT3(0)' created for font 'Valkyrie
-(fontspec)             T3' with options
-(fontspec)             [Ligatures=TeX,Mapping=tex-text,Numbers=OldStyle,SmallCa
-psFont={Valkyrie
-(fontspec)             C3}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Valkyrie
-(fontspec)             T3/OT:script=latn;language=dflt;+onum;mapping=tex-text;"
-
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Valkyrie
-(fontspec)             C3/OT:script=latn;language=dflt;+onum;mapping=tex-text;"
-
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Valkyrie
-(fontspec)             T3/I/OT:script=latn;language=dflt;+onum;mapping=tex-text
-;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->"Valkyrie
+ 
+Here is how much of TeX's memory you used:
+ 14739 strings out of 479418
+ 268855 string characters out of 5884586
+ 600937 words of memory out of 5000000
+ 32038 multiletter control sequences out of 15000+600000
+ 533027 words of font info for 28 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 63i,0n,51p,414b,115s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
+  <->"Valkyrie
 (fontspec)             C3/OT:script=latn;language=dflt;+onum;mapping=tex-text;"
 
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Valkyrie

@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8"/>
   <title>$title$</title>
-  <link rel="stylesheet" href="../css/tufte.css"/>
-  <link rel="stylesheet" href="../css/joel.css"/>
-  <link rel="alternate" type="application/atom+xml" title="Atom feed" href="../feed.xml" />
+  <link rel="stylesheet" href="css/tufte.css"/>
+  <link rel="stylesheet" href="css/joel.css"/>
+  <link rel="alternate" type="application/atom+xml" title="Atom feed" href="feed.xml" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style type="text/css">
    img { mix-blend-mode: multiply; }
@@ -15,14 +15,17 @@
     <h1>$title$</h1>
 
     <nav><ul>
-
-        <li><a href="../index.html">&uarr; Home</a></li>
-
+        <li><a href="make-html-source.sh">&larr; Previous</a></li>
+        <li><a href="index.html">&uarr; Home</a></li>
+        <li><a href="pollen.lua">Next &rarr;</a></li>
 
     </ul></nav>
 
         <p>$if(tags)$$endif$</p><p>$body$</p>
-</article>
 
+    </article>
+    <footer><hr>
+    <p>My name is Faiz. I’m currently a Computing major in the College of Creative Studies at UC Santa Barbara. You can find me on <a href="https://github.com/ProbablyFaiz">GitHub</a>, <a href="https://www.linkedin.com/in/faiz-s-74a510126/">LinkedIn</a>, or <a href="mailto:faiz@faizsurani.com">by email</a>.</p>
+    </footer>
 </body>
 </html>

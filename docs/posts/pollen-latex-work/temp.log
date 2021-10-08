@@ -957,61 +957,39 @@ ping=tex-text;"
 mapping=tex-text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
 (fontspec)             <->"Valkyrie
-(fontspec)             C3/OT:script=latn;language=dflt;letterspace=10;+onum;map
-ping=tex-text;"
+(fontspec)             C3/OT:script=latn;language=dflt;letter49d49e11ea58_Screen+Shot+2020-07-22+at+10.58.21+AM.png' not found on input l
+ine 84.
 
+! Unable to load picture or PDF file 'https://images.prismic.io/faizsurani/ae82
+7a86-d2c3-4e15-a38f-49d49e11ea58_Screen+Shot+2020-07-22+at+10.58.21+AM.png'.
+<to be read again> 
+                   }
+l.84 ...Screen+Shot+2020-07-22+at+10.58.21+AM.png}
+                                                  \caption{When you definite...
 
-LaTeX Font Warning: Font shape `TU/ValkyrieT3(0)/b/n' undefined
-(Font)              using `TU/ValkyrieT3(0)/m/n' instead on input line 94.
+? 
+! Emergency stop.
+<to be read again> 
+                   }
+l.84 ...Screen+Shot+2020-07-22+at+10.58.21+AM.png}
+                                                  \caption{When you definite...
+End of file on the terminal!
 
-[1
-
-]
-
-LaTeX Warning: Marginpar on page 2 moved.
-
-
-LaTeX Warning: Marginpar on page 2 moved.
-
-
-LaTeX Warning: Marginpar on page 2 moved.
-
-
-LaTeX Warning: Marginpar on page 2 moved.
-
-
-LaTeX Warning: Marginpar on page 2 moved.
-
-File: img/flatland-pageflipping-t-x.png Graphic file (type bmp)
-<img/flatland-pageflipping-t-x.png>
-
-LaTeX Warning: Marginpar on page 2 moved.
-
-[2]
-Missing character: There is no ’ in font ectt1000!
-Missing character: There is no ’ in font ectt1000!
-
-
-LaTeX Warning: Marginpar on page 3 moved.
-
-
-Overfull \hbox (95.71196pt too wide) in paragraph at lines 108--108
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][] [] 
- []
-
-
-LaTeX Warning: Marginpar on page 3 moved.
-
-
-LaTeX Warning: Marginpar on page 3 moved.
-
-
-Package bibentry Warning: You have used \nobibliography* 
-(bibentry)                without a following \bibliography.
-(bibentry)                You may not be able to run BibTeX.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
+ 
+Here is how much of TeX's memory you used:
+ 15788 strings out of 479418
+ 292525 string characters out of 5884586
+ 800228 words of memory out of 5000000
+ 32971 multiletter control sequences out of 15000+600000
+ 535970 words of font info for 65 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 63i,7n,119p,561b,355s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
+ 65 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 63i,7n,119p,561b,355s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
+n input line 124.
 [3]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
 
