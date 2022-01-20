@@ -3,10 +3,11 @@
 index.html
 ◊all.html{
     writing/parable-of-unix.html
-    writing/affirmative-action.html
     writing/third-party-doctrine.html
     writing/independent-legislature-doctrine.html
     writing/green-marshall-plan.html
+    projects/lexcaliber.html
+    projects/battleword.html
     projects/drdocx.html
     projects/regular-vm.html
     projects/evacuation-routes.html
