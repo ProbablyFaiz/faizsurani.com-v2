@@ -8,6 +8,7 @@
 *.xml
 *.toc
 *.pyc
+build/
 compiled/
 pollen-cache/
 drafts/
