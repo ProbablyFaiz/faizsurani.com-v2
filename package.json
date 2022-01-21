@@ -7,6 +7,6 @@
         "gh-pages": "^3.2.3"
     },
     "scripts": {
-        "deploy": "cd src/&& raco pollen reset && raco pollen render -r -f -j 4 && cd .. raco pollen publish src/ build/ && gh-pages -d build"
+        "deploy": "cd src/&& raco pollen reset && raco pollen render -r -f -j 4 && cd .. && raco pollen publish src/ build/ && gh-pages -d build"
     }
 }
