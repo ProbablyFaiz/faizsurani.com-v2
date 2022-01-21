@@ -1,0 +1,12 @@
+{
+    "name": "faizsurani.com",
+    "description": "package.json so gh-pages works",
+    "version": "0.1.0",
+    "dependencies": {},
+    "devDependencies": {
+        "gh-pages": "^3.2.3"
+    },
+    "scripts": {
+        "publish": "raco pollen render -r -f -j 4 && raco pollen publish src/ build/ && gh-pages -d build"
+    }
+}
