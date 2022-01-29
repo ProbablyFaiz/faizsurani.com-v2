@@ -34,7 +34,7 @@
                 &middot; ◊(pubdate->abbr-english (hash-ref metas 'doc-publish-date))
             }
             ◊when/splice[(select-from-metas 'pdf-url metas)]{
-                &middot; <a href="◊|path-prefix|◊|(hash-ref metas 'pdf-url)|">Download PDF</a>
+                &middot; <a href="◊|path-prefix|◊|(hash-ref metas 'pdf-url)|">View PDF</a>
             }
             ◊when/splice[(select-from-metas 'website-url metas)]{
                 &middot; <a href="◊|(hash-ref metas 'website-url)|">Website</a>
@@ -60,7 +60,7 @@
                             ◊pdfname[source-file]
                           )
                 ">
-                  <img src="◊|path-prefix|css/pdficon.png" width="15" height="15" alt="Download PDF" />
+                  <img src="◊|path-prefix|css/pdficon.png" width="15" height="15" alt="View PDF" />
                   <span class="caps" style="font-style: normal">PDF</span></a></li>
         }
     ◊;    ◊when/splice[(string-contains path-prefix "/")]{
