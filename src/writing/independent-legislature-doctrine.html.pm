@@ -8,4 +8,4 @@
 ◊(define-meta post-type        "writing.html")
 ◊(define-meta pdf-url          "assets/independent-legislature-doctrine.pdf")
 
-Written just prior to the 2020 election, this article is intended to shed light on a deeply concerning legal doctrine gaining traction among the conservative bloc of the Supreme Court. In the piece, I discuss the historical and textual grounding of the independent state legislature doctrine, as well as the profound implications it could have if applied to 2020 election disputes or future election cases.
+◊p{Written just prior to the 2020 election, this article is intended to shed light on a deeply concerning legal doctrine gaining traction among the conservative bloc of the Supreme Court. In the piece, I discuss the historical and textual grounding of the independent state legislature doctrine, as well as the profound implications it could have if applied to 2020 election disputes or future election cases.}

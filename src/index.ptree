@@ -2,19 +2,18 @@
 
 index.html
 ◊all.html{
-    writing/amca-brief-2022.html
-    writing/parable-of-unix.html
     writing/fulton.html
-    writing/amca-brief-2021.html
+    writing/parable-of-unix.html
     writing/third-party-doctrine.html
     writing/independent-legislature-doctrine.html
-    writing/green-marshall-plan.html
+    writing/stockton-v-lsr.html
+    writing/amca-brief-2022.html
+    writing/amca-brief-2021.html
     projects/lexcaliber.html
     projects/worduel.html
     projects/drdocx.html
     projects/regular-vm.html
     projects/evacuation-routes.html
-    projects/toll-of-substance-abuse.html
     projects/open-in-stackedit.html
     blog/drdocx-first-release.html
     blog/deplatforming.html
