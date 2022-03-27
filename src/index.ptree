@@ -6,9 +6,6 @@ index.html
     writing/parable-of-unix.html
     writing/third-party-doctrine.html
     writing/independent-legislature-doctrine.html
-    writing/stockton-v-lsr.html
-    writing/amca-brief-2022.html
-    writing/amca-brief-2021.html
     projects/lexcaliber.html
     projects/worduel.html
     projects/drdocx.html
@@ -17,12 +14,13 @@ index.html
     projects/open-in-stackedit.html
     blog/drdocx-first-release.html
     blog/deplatforming.html
+    writing/stockton-v-lsr.html
+    writing/amca-brief-2022.html
+    writing/amca-brief-2021.html
 }
 ◊series.html{
     series/software.html
-    series/data-science.html
     series/law.html
-    series/policy.html
 }
 ◊types.html{
     blog.html

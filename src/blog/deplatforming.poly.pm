@@ -4,7 +4,7 @@
 ◊(define-meta doc-publish-date "2019-06-04")
 ◊(define-meta author           "Faiz Surani")
 ◊(define-meta summary          "How YouTube's demonetization snafu shows the need to rethink antitrust policy.")
-◊(define-meta series           "series/policy.html")
+◊(define-meta series           "series/law.html")
 ◊(define-meta post-type        "blog.html")
 
 ◊newthought{On May 30}, YouTube became embroiled in yet another ◊hyperlink["https://buzzfeednews.com/article/mathonan/susan-wojcicki-youtube"]{hate speech controversy} as LGBT writer Carlos Maza’s viral tweet drew attention to far-right online commentator Steven Crowder repeatedly referring to Maza as a “lispy queer.” YouTube’s response, after several days of radio silence, contradicted itself several times and culminated in this instant classic of corporate mishaps:

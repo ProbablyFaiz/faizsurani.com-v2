@@ -3,7 +3,7 @@
 ◊(define-meta title            "Optimal Evacuation Routes")
 ◊(define-meta author           "Faiz Surani")
 ◊(define-meta summary          "A Vehicle Routing Problem simulation using OpenStreetMaps data to find optimal evacuation routes for Glacier National Park in case of emergency.")
-◊(define-meta series           "series/data-science.html")
+◊(define-meta series           "series/software.html")
 ◊(define-meta post-type        "projects.html")
 ◊(define-meta pdf-url          "assets/gnp-evacuation-routes.pdf")
 

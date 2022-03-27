@@ -3,7 +3,7 @@
 ◊(define-meta title            "The Toll of Substance Abuse")
 ◊(define-meta author           "Faiz Surani et. al")
 ◊(define-meta summary          "A statistical analysis of the worrying trends in teenage substance abuse and its long-run impacts on society.")
-◊(define-meta series           "series/data-science.html")
+◊(define-meta series           "series/software.html")
 ◊(define-meta post-type        "projects.html")
 ◊(define-meta pdf-url          "assets/toll-of-substance-abuse.pdf")
 

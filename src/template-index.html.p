@@ -14,7 +14,7 @@
 <body>
     <article>
 	<h1>◊(hash-ref metas 'title)</h1>
-    <h2>◊(hash-ref metas 'author)</h2>
+◊;    <h2>◊(hash-ref metas 'author)</h2>
 
     ◊; Insert the content from the page (index.html.pm in this case).
     ◊(map ->html (select-from-doc 'body here))
