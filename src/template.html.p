@@ -10,8 +10,8 @@
   ◊(define source-file (select-from-metas 'here-path metas))
   ◊(define pollen-source-listing
       (regexp-replace #px"(.*)\\/(.+).html" (symbol->string here) "\\2.pollen.html"))
-  <link rel="stylesheet" href="◊|path-prefix|css/tufte.css"/>
-  <link rel="stylesheet" href="◊|path-prefix|css/joel.css"/>
+  <link rel="stylesheet" href="/css/tufte.css"/>
+  <link rel="stylesheet" href="/css/joel.css"/>
   <link rel="alternate" type="application/atom+xml" title="Atom feed" href="◊|path-prefix|feed.xml" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style type="text/css">
@@ -60,7 +60,7 @@
                             ◊pdfname[source-file]
                           )
                 ">
-                  <img src="◊|path-prefix|css/pdficon.png" width="15" height="15" alt="View PDF" />
+                  <img src="/css/pdficon.png" width="15" height="15" alt="View PDF" />
                   <span class="caps" style="font-style: normal">PDF</span></a></li>
         }
     ◊;    ◊when/splice[(string-contains path-prefix "/")]{

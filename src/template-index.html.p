@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <title>◊(hash-ref metas 'title)</title>
-  <link rel="stylesheet" href="css/tufte.css"/>
-  <link rel="stylesheet" href="css/joel.css"/>
+  <link rel="stylesheet" href="/css/tufte.css"/>
+  <link rel="stylesheet" href="/css/joel.css"/>
   <link rel="alternate" type="application/atom+xml" title="Atom feed" href="feed.xml" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style type="text/css">
@@ -50,7 +50,7 @@
     )
 
     <p class="smallcaps" style="margin-bottom: 1rem; padding-top: 1rem;">
-        Find by category: ◊(->html (list-groupings 'series.html))
+        find by category: ◊(->html (list-groupings 'series.html))
     </p>
 
     ◊(define (list-type-posts type) 
