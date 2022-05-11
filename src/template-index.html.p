@@ -21,7 +21,7 @@
 
     <p>
         <a href="about.html">About Me</a> 
-        &middot; <a href="resume.pdf">Resume</a> 
+        &middot; <a href="/assets/resume.pdf">Resume</a> 
         &middot; <a href="https://github.com/ProbablyFaiz">GitHub</a>
         &middot; <a href="https://www.linkedin.com/in/faiz-surani-74a510126/">LinkedIn</a>
         &middot; <a href="mailto:faiz@faizsurani.com">Email</a>
