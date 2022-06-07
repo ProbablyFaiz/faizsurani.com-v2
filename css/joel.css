@@ -19,7 +19,7 @@
 
 div.poem {
     max-width: 55%;
-    font-size: 1.4rem;
+    font-size: 1.32rem;
     line-height: 2rem;
     margin-top: 1.4rem;
     margin-bottom: 1.4rem; }
@@ -89,6 +89,7 @@ a.index-entry { text-decoration: none; border: none; }
 
 .smallcaps {
     font-family: valkyrie-caps, valkyrie, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 1.2rem;
 }
 
 p + p.pause-before,

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.21)  7 JUN 2022 13:08
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.21)  7 JUN 2022 13:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -998,9 +998,6 @@ LaTeX Warning: Marginpar on page 3 moved.
 Package bibentry Warning: You have used \nobibliography* 
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
-
-[3]
-(/Users/faiz/src/personal/faizsurani.com-v2/src/ibTeX.
 
 [3]
 (/Users/faiz/src/personal/faizsurani.com-v2/src/blog/pollen-latex-work/temp.aux
