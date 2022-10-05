@@ -4,7 +4,7 @@ The intent of this license is to allow others to use the code powering the websi
 but not my copyrighted writing or other work that is hosted on the website.
 
 In general, the content of this website is not open-source.
-That means, content files including: *.pm files,
+That means: content files including: *.pm files,
 all output files (files with HTML and PDF extensions), 
 and other non-CSS static files (like files in the assets/ directory and any images)
 are copyrighted content and are NOT licensed for any purpose.
