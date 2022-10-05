@@ -7,23 +7,18 @@ index.html
     writing/third-party-doctrine.html
     writing/independent-legislature-doctrine.html
     projects/lexcaliber.html
+    projects/pasado.html
     projects/marktex.html
     projects/worduel.html
     projects/drdocx.html
     projects/regular-vm.html
-    projects/evacuation-routes.html
-    projects/open-in-stackedit.html
-    blog/drdocx-first-release.html
     writing/stockton-v-lsr.html
-    writing/amca-brief-2022.html
-    writing/amca-brief-2021.html
 }
 ◊series.html{
     series/software.html
     series/law.html
 }
 ◊types.html{
-    blog.html
     projects.html
     writing.html
 }

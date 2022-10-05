@@ -24,7 +24,7 @@
         &middot; <a href="/assets/resume.pdf">Resume</a> 
         &middot; <a href="https://github.com/ProbablyFaiz">GitHub</a>
         &middot; <a href="https://www.linkedin.com/in/faiz-surani-74a510126/">LinkedIn</a>
-        &middot; <a href="mailto:faiz@faizsurani.com">Email</a>
+        ◊; &middot; <a href="mailto:faiz@faizsurani.com">Email</a>
         ◊; &middot; <a href="feed.xml"><span class="caps">RSS</span> Feed</a>
     </p>
 
@@ -49,9 +49,9 @@
         )
     )
 
-    <p class="smallcaps" style="margin-bottom: 1rem; padding-top: 1rem;">
-        find by category: ◊(->html (list-groupings 'series.html))
-    </p>
+    ◊; <p class="smallcaps" style="margin-bottom: 1rem; padding-top: 1rem;">
+    ◊;     find by category: ◊(->html (list-groupings 'series.html))
+    ◊; </p>
 
     ◊(define (list-type-posts type) 
         `(div
