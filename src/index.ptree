@@ -14,12 +14,15 @@ index.html
     projects/drdocx.html
     projects/regular-vm.html
     writing/stockton-v-lsr.html
+    writing/murray-v-pritchett.html
+    writing/chambers-v-new-storke.html
 }
 ◊series.html{
     series/software.html
     series/law.html
 }
 ◊types.html{
+    ◊; publications.html
     projects.html
     writing.html
 }

@@ -24,8 +24,8 @@
         &middot; <a href="/assets/resume.pdf">Resume</a> 
         &middot; <a href="https://github.com/ProbablyFaiz">GitHub</a>
         &middot; <a href="https://www.linkedin.com/in/faiz-surani-74a510126/">LinkedIn</a>
+        &middot; <a href="https://scholar.google.com/citations?user=GDePYUwAAAAJ&hl=en">Google Scholar</a>
         ◊; &middot; <a href="mailto:faiz@faizsurani.com">Email</a>
-        ◊; &middot; <a href="feed.xml"><span class="caps">RSS</span> Feed</a>
     </p>
 
     ◊(define (list-groupings group-type)
